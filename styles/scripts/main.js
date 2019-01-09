@@ -10,3 +10,6 @@ myHeading.textContent = 'Hello world!';
   // Use a CSS selector to identify an element
  var foxImage = document.querySelector('img');
  foxImage.onclick = sayOuch;
+
+ //  var foxImage = document.querySelectorAll('img');
+// for all images
