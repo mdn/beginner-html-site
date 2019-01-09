@@ -1,0 +1,9 @@
+p, li, h1 {
+  color: red;
+}
+
+p {
+  color: red;
+  width: 500px;
+  border: 1px solid black;
+}
