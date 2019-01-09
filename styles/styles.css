@@ -26,3 +26,17 @@ h1 {
   color: #00539F;
   text-shadow: 3px 3px 1px black;
 }
+
+.quote {
+	color:blue;
+}
+
+
+h2.quote {
+	color:red;
+}
+
+#corevalues {
+	border: 7px solid black;
+}
+
