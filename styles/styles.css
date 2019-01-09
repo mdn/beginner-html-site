@@ -40,3 +40,12 @@ h2.quote {
 	border: 7px solid black;
 }
 
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+#abstract {
+	display:inline-block;
+}
+
