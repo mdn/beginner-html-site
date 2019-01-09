@@ -1,9 +1,24 @@
 p, li, h1 {
-  color: red;
+  color: black;
 }
 
 p {
-  color: red;
+  color: black;
   width: 500px;
   border: 1px solid black;
+  margin: 0 auto;
 }
+
+html {
+  background-color: #d5f4e6;
+}
+
+
+body {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #FF9500;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
+
