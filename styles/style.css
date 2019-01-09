@@ -5,7 +5,7 @@ p, li, h1 {
 p {
   color: black;
   width: 500px;
-  border: 1px solid black;
+  
   margin: 0 auto;
 }
 
@@ -21,4 +21,11 @@ body {
   padding: 0 20px 20px 20px;
   border: 5px solid black;
 }
+p.quote {
+	border: 1px solid black;
+}
 
+
+#corevalues {
+	border: 7px solid black;
+}
