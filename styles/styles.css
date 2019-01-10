@@ -3,5 +3,22 @@ p {
 }
 
 p, li, h1 {
-  color: red;
+  color: blue;
+}
+
+html {
+  background-color: #00205F;
+}
+
+body {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #FF9500;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
 }
