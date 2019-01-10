@@ -22,3 +22,10 @@ img {
   display: block;
   margin: 0 auto;
 }
+
+.quote { color:grey;
+}
+
+.quote {
+	border: 1px solid black;
+}
