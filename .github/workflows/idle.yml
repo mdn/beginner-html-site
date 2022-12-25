@@ -1,0 +1,11 @@
+name: "Label Idle Issues"
+
+on:
+  schedule:
+    - cron: "0 8 * * *"
+
+jobs:
+  mark-as-idle:
+    uses: mdn/workflows/.github/workflows/idle.yml@main
+    with:
+      target-repo: "mdn/beginner-html-site"
