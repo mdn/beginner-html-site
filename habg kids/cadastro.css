@@ -1,0 +1,57 @@
+.bg-purple {
+    background-color: #5a0848  
+}
+.text-purple {
+    color: #5a0848 
+}
+.btn-cadastrar {
+    background-color: #5a0848; 
+    border-color: #5a0848; 
+}
+.btn-cadastrar:hover {
+    background-color: #6a0dad; 
+    border-color: #6a0dad; 
+}
+
+body {
+    background-color: #f8f9fa;
+}
+main {
+    margin-top: 50px;
+}
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+}
+.card-header {
+    background-color: #fff;
+    border-bottom: none;
+}
+.card-body {
+    padding: 40px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+label {
+    color: #5a0848;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    border-radius: 20px;
+    padding: 15px;
+}
+.btn-primary {
+    background-color: #5a0848;
+    border-color: #5a0848;
+    border-radius: 20px;
+    padding: 12px 30px;
+    font-weight: bold;
+}
+.btn-primary:hover {
+    background-color: #6a0dad;
+    border-color: #6a0dad;
+}

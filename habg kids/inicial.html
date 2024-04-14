@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kids monster hamburger</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="inicial.css">
+</head>
+    <header>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-2 text-center">
+                    <img src="img/logo kids.png" alt="kids monster hamburger" class="logo">
+                        
+            </div>
+                <div class="col-md-6 text-center align-items-center-custom">
+                    <a href="#" class="btn">Home</a>
+                    <a href="menu monster.html" class="btn">Menu monster</a>
+                    <a href="bebida.html" class="btn">Bebidas</a>
+                    <a href="brinc.html" class="btn">brinquedos</a>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Pesquisar...">
+                    </div>
+                    <a href="#" id="searchBtn" class="btn"><img src="img/lupa" alt="Pesquisar" class="lupa-icon"></a>
+                </div>
+                <div class="col-md-4 text-center">
+                    <a href="login.html" class="btn btn-login">Login</a>
+                    <a href="cadastro.html" class="btn btn-cadastro">Cadastro</a>
+                </div>
+            </div>
+        </div>
+    </header>  
+    
+    <main>
+        <section id="sobre">
+            <div class="container">
+                <h2 class="text-center mb-4 sobre-titulo">PEDIU CHEGOU</h2>
+                <p class="text-center" style="font-size: 24px;">"Sua buscar pelo Hambúrguer perfeito termina aqui!"</p>
+            </div>
+            <div class="imgdecapa"></div>
+            <img src="img/capa.jpg">
+        </section>
+
+        <div class="meni">
+            <p><h1>Menu Monster</h1></p>
+        </div>
+    </main>
+    <div class="corpomeio"> 
+    
+        <div class="wrapper">
+            <div class="cards">
+                <img src="img/hanb-batman.jpg">
+                <div class="info">
+                    <h1>Hambúrguer Batman</h1>
+                    <p>Monster bruger</p>
+                    <a href="#" class="btn">Compra</a>
+                </div>
+            </div>
+
+            <div class="cards">
+                <img src="img/bebida5.jpg">
+                <div class="info">
+                    <h1>Bebida</h1>
+                    <p>Lata aterrorizante</p>
+                    <a href="#" class="btn">Compra</a>
+                </div>
+            </div>
+
+            <div class="cards">
+                <img src="img/brinc,batman.jpg">
+                <div class="info">
+                    <h1>Brinquedo</h1>
+                    <p>Escolha oque conbime com você!</p>
+                    <a href="#" class="btn">Compra</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <section id="localizacao">
+            <div class="container">
+                <h2 class="text-center mb-4">Localização</h2>
+                <p class="text-center">Endereço: Av. Expedicionário Osvaldo de Almeida Ramos, 280 - Centro, Vassouras - RJ, 27700-000</p>
+                <p class="text-center">Horário de Funcionamento: Seg-Sex: 10h-20h, Sáb-Dom: 11h-18h</p>
+                <p class="text-center"><a href="https://maps.app.goo.gl/PNLNmGLtwomb57dV8" target="_blank">Veja no Mapa</a></p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById("searchBtn").addEventListener("click", function() {
+            document.querySelector(".search-bar").classList.toggle("active");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+.menu {
+    color: #790d0d;
+}
+.bg-purple {
+    background-color: black;
+}
+.text-purple {
+    color: white;
+}
+
+.btn-voltar {
+    color:  whitesmoke;
+    background-color :#fa0303;
+}
+.btn-voltar:hover {
+    color: #fff;
+    background-color: green;
+    
+}
+.logo {
+    max-width: 150px;
+    height: auto;
+    border-radius: 30%;
+}
+
+.escolha {
+    color: black;
+    font-size: 25px; 
+    text-align: center;
+    text-shadow: 2px 2px 5px red;
+    padding: 55px;
+}
+
+.corpomeio {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    padding: 35px; 
+}
+
+.meni{
+    color: black;
+    font-size: 25px; 
+    text-align: center;
+    text-shadow: 2px 2px 5px red;
+    
+}
+
+.wrapper {
+    display: flex;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cards {
+    width: 280px;
+    height: 360px;
+    padding: 3rem 1rem;
+    background: #4f8152;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgb(0, 0, 0, 0, 5);
+    transition: 0.5s ease-in-out;
+    border-radius: 30px;
+}
+
+.cards:hover {
+    transform: translateY(20px);
+}
+
+.cards:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+
+.cards:hover:before {
+    opacity: 1;
+}
+
+.cards img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cards .info {
+    position: relative;
+    z-index: 3;
+    color: rgb(17, 228, 10);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+}
+
+.cards:hover .info {
+    opacity: 1;
+    transform: translateY(0px);
+
+}
+
+.cards .info h1 {
+    margin: 0;
+    color: #fa0303;
+}
+
+.cards .info p {
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.cards .info .btn {
+    text-decoration: none;
+    padding: .5rem 1rem;
+    background-color: #0e4409;
+    border-color: #0e4409;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.cards .info .bts:hover {
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    
+    background-color: #03faa8;
+    border-color: #0e4409;
+}
