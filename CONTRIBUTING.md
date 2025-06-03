@@ -1,4 +1,4 @@
-# Contribution to this repository
+# Contributing to this repository
 
 Thanks for your interest in contributing to MDN!
 
