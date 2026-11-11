@@ -1,26 +1,367 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>My test page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <h1>Mozilla is cool</h1>
-    <img src="images/firefox-icon.png" alt="The Firefox logo: a flaming fox surrounding the Earth.">
-
-    <p>At Mozilla, we’re a global community of</p>
-
-    <ul> <!-- changed to list in the tutorial -->
-      <li>technologists</li>
-      <li>thinkers</li>
-      <li>builders</li>
-    </ul>
-
-    <p>working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. 
-      We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
-
-    <p>Read the <a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a> 
-      to learn even more about the values and principles that guide the pursuit of our mission.</p>
-  </body>
-</html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#101827">
+<title>داستان پیامبران | دانشنامهٔ داستان‌های دینی</title>
+<style>
+:root{--bg:#0b1220;--panel:#121e30;--panel2:#19283d;--text:#eef4ff;--muted:#a8b6ca;--gold:#e8bd68;--gold2:#ffe2a0;--line:#293a52;--good:#70d6a0;--danger:#ff8585;--shadow:0 18px 50px #0005}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 85% 0%,#24334a 0,transparent 34%),var(--bg);color:var(--text);font-family:Tahoma,Arial,sans-serif;line-height:1.9;transition:.25s}
+body.light{--bg:#f3f5f8;--panel:#fff;--panel2:#edf1f6;--text:#172235;--muted:#64748b;--gold:#9a6a18;--gold2:#70480c;--line:#d9e0e9;--shadow:0 14px 35px #17223512;background:linear-gradient(130deg,#fff8e8,#f3f5f8 45%)}
+button,input,select,textarea{font:inherit}button{cursor:pointer;border:0}a{color:inherit;text-decoration:none}.wrap{width:min(1180px,94%);margin:auto}
+.topbar{position:sticky;top:0;z-index:20;background:#0b1220df;backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.light .topbar{background:#ffffffdf}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 0}.brand{display:flex;align-items:center;gap:10px;font-weight:900}.logo{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(145deg,#ffe5a4,#b77b24);color:#1b2230;font-size:22px;box-shadow:0 6px 20px #d5a34a33}
+.navlinks{display:flex;gap:6px;flex-wrap:wrap}.navlinks button,.iconbtn{background:transparent;color:var(--muted);padding:8px 11px;border-radius:10px}.navlinks button:hover,.iconbtn:hover{background:var(--panel2);color:var(--text)}.navright{display:flex;gap:6px;align-items:center}
+.hero{padding:58px 0 30px;display:grid;grid-template-columns:1.4fr .8fr;gap:25px;align-items:center}.eyebrow{color:var(--gold2);font-weight:bold;font-size:13px;letter-spacing:.4px}.hero h1{font-size:clamp(30px,5vw,54px);line-height:1.45;margin:10px 0}.hero p{color:var(--muted);max-width:680px}.hero-card{background:linear-gradient(145deg,#263750,#142033);border:1px solid #53647b55;border-radius:26px;padding:26px;box-shadow:var(--shadow);text-align:center}.light .hero-card{background:linear-gradient(145deg,#fff1cf,#fff)}.hero-symbol{font-size:66px;margin:4px}.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:18px}.stat{background:#ffffff12;border-radius:14px;padding:10px}.stat b{display:block;font-size:20px;color:var(--gold2)}.stat span{font-size:11px;color:var(--muted)}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.btn{padding:10px 16px;border-radius:12px;background:var(--panel2);color:var(--text);border:1px solid var(--line);font-weight:bold}.btn.primary{background:linear-gradient(135deg,#f2d28e,#c18a37);color:#20202a;border:0}.btn.outline{background:transparent;border-color:var(--gold);color:var(--gold2)}.btn.small{padding:6px 10px;font-size:12px}.btn:disabled{opacity:.45;cursor:not-allowed}
+.section{padding:25px 0 34px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-bottom:17px}.section h2{margin:0;font-size:24px}.section-head p{margin:4px 0 0;color:var(--muted);font-size:13px}
+.toolbar{display:grid;grid-template-columns:1fr 180px 150px;gap:9px;margin:16px 0}.field{width:100%;background:var(--panel);border:1px solid var(--line);border-radius:12px;color:var(--text);padding:11px 13px;outline:none}.field:focus{border-color:var(--gold)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.story-card{background:var(--panel);border:1px solid var(--line);border-radius:17px;padding:16px;transition:.2s;box-shadow:0 6px 18px #0000000a}.story-card:hover{transform:translateY(-3px);border-color:#c99a4f88}.card-top{display:flex;justify-content:space-between;align-items:center}.avatar{width:45px;height:45px;border-radius:14px;display:grid;place-items:center;background:var(--panel2);font-size:23px}.tag{font-size:11px;color:var(--gold2);background:#c99a4f18;padding:3px 8px;border-radius:20px}.story-card h3{margin:10px 0 3px}.story-card p{font-size:13px;color:var(--muted);margin:0 0 12px;min-height:50px}.card-actions{display:flex;gap:7px;align-items:center}.card-actions .btn{flex:1}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:20px;box-shadow:var(--shadow)}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:14px}.daily{border-color:#b98b45aa;background:linear-gradient(140deg,var(--panel),#a77b2a12)}.daily h3{margin:4px 0}.muted{color:var(--muted)}.progress{height:9px;background:var(--panel2);border-radius:20px;overflow:hidden}.progress span{display:block;height:100%;background:linear-gradient(90deg,#c18a37,#ffe1a0);width:0%;transition:.3s}
+.tabs{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:14px}.tab{padding:8px 13px;border-radius:10px;background:var(--panel2);color:var(--muted)}.tab.active{background:var(--gold);color:#1b2230;font-weight:bold}
+.detail{display:none}.detail.show{display:block}.detail h2{color:var(--gold2)}.detail-text{white-space:pre-line;font-size:15px}.detail-tools{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0}
+.quiz-q{font-size:18px;font-weight:bold;margin:8px 0 15px}.answer{display:block;width:100%;text-align:right;margin:8px 0;padding:11px 13px;background:var(--panel2);border:1px solid var(--line);color:var(--text);border-radius:12px}.answer.correct{border-color:var(--good);background:#2c9b6418}.answer.wrong{border-color:var(--danger);background:#c44b4b18}
+.timeline{border-right:2px solid var(--gold);margin:10px 15px;padding-right:20px}.timeitem{position:relative;margin:0 0 18px}.timeitem:before{content:"";position:absolute;right:-27px;top:9px;width:11px;height:11px;background:var(--gold);border-radius:50%;box-shadow:0 0 0 4px var(--panel)}
+footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:12px;text-align:center;margin-top:25px}
+.modal{position:fixed;inset:0;background:#0009;z-index:50;display:none;align-items:center;justify-content:center;padding:15px}.modal.open{display:flex}.modal-box{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:20px;width:min(620px,100%);max-height:85vh;overflow:auto}.modal-head{display:flex;justify-content:space-between;align-items:center}.close{background:var(--panel2);color:var(--text);border-radius:9px;padding:5px 10px}.toast{position:fixed;bottom:18px;left:50%;transform:translate(-50%,100px);background:#1d2c40;color:#fff;padding:10px 17px;border-radius:12px;z-index:80;transition:.3s;box-shadow:var(--shadow);max-width:90%;text-align:center}.toast.show{transform:translate(-50%,0)}.empty{padding:25px;text-align:center;color:var(--muted);grid-column:1/-1}.hidden{display:none!important}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:35px}.hero-card{display:none}.grid{grid-template-columns:repeat(2,1fr)}.navlinks{display:none}.toolbar{grid-template-columns:1fr 1fr}.toolbar input{grid-column:1/-1}}
+@media(max-width:520px){.grid,.two-col{grid-template-columns:1fr}.section h2{font-size:21px}.hero h1{font-size:32px}.toolbar{grid-template-columns:1fr}.toolbar input{grid-column:auto}.nav{padding:9px 0}.brand{font-size:14px}}
+</style>
+</head>
+<body>
+<header class="topbar">
+ <div class="wrap nav">
+  <div class="brand"><div class="logo">✦</div><span>داستان پیامبران</span></div>
+  <nav class="navlinks">
+   <button onclick="go('home')">خانه</button><button onclick="go('stories')">داستان‌ها</button><button onclick="go('quiz')">آزمون</button><button onclick="go('timeline')">خط زمانی</button><button onclick="go('about')">درباره</button>
+  </nav>
+  <div class="navright"><button class="iconbtn" onclick="toggleTheme()" title="تغییر پوسته">◐</button><button class="iconbtn" onclick="openSettings()" title="تنظیمات">⚙</button></div>
+ </div>
+</header>
+<main class="wrap">
+<section id="home" class="hero">
+ <div>
+  <div class="eyebrow">دانشنامهٔ داستان‌ها و آموزه‌های دینی</div>
+  <h1>سفری آموزنده در زندگی پیامبران</h1>
+  <p>با داستان‌های پیامبران و امامان، رویدادهای مهم، درس‌های اخلاقی و پرسش‌های دانستنی آشنا شو. هر روز چیزی تازه یاد بگیر و مسیر مطالعه‌ات را ادامه بده.</p>
+  <div class="actions"><button class="btn primary" onclick="go('stories')">شروع مطالعه ←</button><button class="btn outline" onclick="dailyOpen()">سؤال روز</button><button class="btn" onclick="openBazaar()">باز کردن و دانلود در بازار</button></div>
+ </div>
+ <div class="hero-card"><div class="hero-symbol">☼</div><h2>دانایی، چراغ راه است</h2><div class="muted">مطالعه کن، بیاموز و مهربانی را تمرین کن.</div>
+  <div class="hero-stats"><div class="stat"><b id="statStories">25</b><span>پیامبر</span></div><div class="stat"><b id="statFav">0</b><span>علاقه‌مندی</span></div><div class="stat"><b id="statPoints">0</b><span>امتیاز</span></div></div>
+ </div>
+</section>
+<section class="section" id="quick">
+ <div class="section-head"><div><h2>ادامهٔ مسیر یادگیری</h2><p>پیشرفت مطالعه و فعالیت‌های تو</p></div></div>
+ <div class="two-col">
+  <div class="panel"><div class="muted">داستان‌های خوانده‌شده</div><h2><span id="readCount">0</span> از 25</h2><div class="progress"><span id="readProgress"></span></div><p class="muted" style="font-size:12px">با باز کردن هر داستان، آن را به فهرست مطالعه‌شده‌ها اضافه کن.</p></div>
+  <div class="panel daily"><div class="eyebrow">پیشنهاد امروز</div><h3 id="dailyTitle">داستان حضرت یوسف (ع)</h3><p class="muted" id="dailyDesc">داستان صبر، پاکدامنی و بخشش</p><button class="btn small primary" onclick="openDailyStory()">مطالعهٔ پیشنهاد</button></div>
+ </div>
+</section>
+<section class="section" id="stories">
+ <div class="section-head"><div><h2>کتابخانهٔ داستان‌ها</h2><p>جست‌وجو کن، دسته‌بندی را انتخاب کن و داستان دلخواهت را بخوان.</p></div><button class="btn small" onclick="showFavorites()">★ علاقه‌مندی‌ها</button></div>
+ <div class="toolbar">
+  <input id="search" class="field" placeholder="نام پیامبر یا موضوع را جست‌وجو کن..." oninput="renderStories()">
+  <select id="category" class="field" onchange="renderStories()"><option value="all">همهٔ دسته‌ها</option><option value="پیامبر">پیامبران</option><option value="اولوالعزم">پیامبران اولوالعزم</option><option value="آموزه">آموزه‌های اخلاقی</option></select>
+  <select id="sort" class="field" onchange="renderStories()"><option value="default">ترتیب پیشنهادی</option><option value="az">نام: الف تا ی</option></select>
+ </div>
+ <div id="storyGrid" class="grid"></div>
+</section>
+<section class="section" id="detailSection">
+ <div class="detail panel" id="detail">
+  <div class="section-head"><div><div class="eyebrow">متن داستان</div><h2 id="detailTitle"></h2></div><button class="close" onclick="closeDetail()">بستن ×</button></div>
+  <div class="detail-tools"><button class="btn small" id="favBtn" onclick="toggleCurrentFavorite()">☆ افزودن به علاقه‌مندی</button><button class="btn small" onclick="speakStory()">▶ خواندن صوتی</button><button class="btn small" onclick="stopSpeak()">■ توقف صدا</button><button class="btn small" onclick="shareStory()">اشتراک‌گذاری</button><button class="btn small" onclick="printStory()">چاپ</button></div>
+  <div class="detail-text" id="detailText"></div>
+  <div class="panel" style="margin-top:18px"><b>درس‌های این داستان</b><p id="detailLessons" class="muted"></p></div>
+  <h3>یادداشت شخصی</h3><textarea id="storyNote" class="field" rows="3" placeholder="نکته‌ای که از این داستان یاد گرفتی..."></textarea><button class="btn small primary" onclick="saveNote()">ذخیرهٔ یادداشت</button>
+ </div>
+</section>
+<section class="section" id="quiz">
+ <div class="section-head"><div><h2>آزمون دانستنی‌ها</h2><p>به سؤال‌ها پاسخ بده و امتیاز جمع کن.</p></div><span class="tag">هر پاسخ درست: 10 امتیاز</span></div>
+ <div class="panel"><div class="muted" id="quizCounter">برای شروع آماده‌ای؟</div><div class="quiz-q" id="quizQuestion">آزمون کوتاه اطلاعات دینی</div><div id="quizAnswers"></div><div class="actions"><button class="btn primary" id="nextQuiz" onclick="nextQuestion()">شروع آزمون</button><span class="muted" id="quizFeedback"></span></div></div>
+</section>
+<section class="section" id="timeline">
+ <div class="section-head"><div><h2>خط زمانی پیامبران</h2><p>نمایی ساده و آموزشی از ترتیب برخی پیامبران در روایت‌های دینی؛ تاریخ دقیق همهٔ دوره‌ها مشخص نیست.</p></div></div>
+ <div class="panel"><div class="timeline" id="timelineList"></div></div>
+</section>
+<section class="section" id="saved">
+ <div class="section-head"><div><h2>یادداشت‌ها و علاقه‌مندی‌ها</h2><p>موارد ذخیره‌شده روی همین دستگاه نگهداری می‌شوند.</p></div></div>
+ <div class="two-col"><div class="panel"><h3>علاقه‌مندی‌ها</h3><div id="favoriteList" class="muted">هنوز داستانی ذخیره نشده است.</div></div><div class="panel"><h3>یادداشت‌های من</h3><div id="notesList" class="muted">یادداشتی ثبت نشده است.</div></div></div>
+</section>
+<section class="section" id="about">
+ <div class="section-head"><div><h2>دربارهٔ داستان پیامبران</h2><p>یک تجربهٔ آموزشی فارسی و مناسب مطالعهٔ خانوادگی</p></div></div>
+ <div class="panel"><p>این وب‌سایت برای آشنایی مقدماتی با روایت‌های قرآنی و آموزه‌های اخلاقی طراحی شده است. متن‌ها خلاصه و آموزشی هستند و جایگزین مطالعهٔ منابع معتبر دینی و تاریخی نیستند.</p><p class="muted">سازنده / ناشر: فروژی</p><div class="actions"><button class="btn" onclick="exportData()">پشتیبان‌گیری از اطلاعات</button><button class="btn" onclick="document.getElementById('importFile').click()">بازیابی اطلاعات</button><input id="importFile" type="file" accept="application/json" class="hidden" onchange="importData(event)"><button class="btn outline" onclick="openBazaar()">باز کردن و دانلود در بازار</button></div><p class="muted" style="font-size:12px">اطلاعات مطالعه، امتیازها و یادداشت‌ها در حافظهٔ مرورگر ذخیره می‌شوند.</p></div>
+</section>
+</main>
+<footer><div class="wrap">داستان پیامبران · نسخهٔ آموزشی وب · طراحی‌شده برای فروژی</div></footer>
+<div class="modal" id="settingsModal"><div class="modal-box"><div class="modal-head"><h2>تنظیمات</h2><button class="close" onclick="closeSettings()">×</button></div>
+ <label>اندازهٔ نوشته‌ها</label><select id="fontSize" class="field" onchange="changeFont()"><option value="14">کوچک</option><option value="15" selected>معمولی</option><option value="17">بزرگ</option><option value="19">خیلی بزرگ</option></select>
+ <p><label><input type="checkbox" id="soundToggle" checked> فعال بودن بازخورد صوتی مرورگر</label></p>
+ <p><label><input type="checkbox" id="autoSave" checked> ذخیرهٔ خودکار یادداشت‌ها</label></p>
+ <div class="actions"><button class="btn" onclick="toggleTheme()">تغییر حالت شب / روز</button><button class="btn" onclick="resetProgress()">پاک‌کردن پیشرفت</button></div>
+ </div></div>
+<div class="modal" id="dailyModal"><div class="modal-box"><div class="modal-head"><h2>سؤال روز</h2><button class="close" onclick="closeDaily()">×</button></div><p id="dailyQuestion"></p><div id="dailyAnswers"></div><p id="dailyResult" class="muted"></p></div></div>
+<div class="toast" id="toast"></div>
+<script>
+const stories = [
+{id:1,name:"حضرت آدم (ع)",symbol:"🌱",category:"پیامبر",tags:"آفرینش آغاز انسان",summary:"آغاز زندگی انسان و آموختن توبه و بازگشت به خدا.",text:"در روایت‌های دینی، حضرت آدم (ع) نخستین انسان و نخستین پیامبر معرفی شده است. خداوند به او دانش آموخت و فرشتگان را به بزرگداشت مقام انسان فرمان داد. آدم و همسرش در بهشت جای داشتند و پس از یک آزمون، به زمین آمدند تا زندگی انسانی را آغاز کنند. او از پروردگار آمرزش خواست و راه توبه و بازگشت را آموخت. داستان آدم یادآور ارزش دانش، مسئولیت‌پذیری و امید به بخشایش خداوند است.",lessons:"دانش‌آموزی، پذیرفتن مسئولیت اشتباه، توبه و امید."},
+{id:2,name:"حضرت ادریس (ع)",symbol:"📚",category:"پیامبر",tags:"دانش صبر",summary:"پیامبری که در قرآن با راستگویی و مقام بلند یاد شده است.",text:"حضرت ادریس (ع) در قرآن پیامبری راستگو و دارای مقام بلند معرفی شده است. در روایت‌های اسلامی، او به دانش، عبادت و آموزش مردم شناخته می‌شود. داستان زندگی او در منابع مختلف با جزئیات متفاوتی نقل شده و همهٔ آن جزئیات قطعیت تاریخی یکسانی ندارند. یاد او فرصتی برای توجه به ارزش آگاهی، درستکاری و تلاش پیوسته است.",lessons:"راستگویی، یادگیری و پشتکار."},
+{id:3,name:"حضرت نوح (ع)",symbol:"🚢",category:"اولوالعزم",tags:"کشتی طوفان صبر",summary:"سال‌ها دعوت به یکتاپرستی و ساخت کشتی به فرمان خدا.",text:"حضرت نوح (ع) مردم را به پرستش خدای یگانه و دوری از ستم دعوت می‌کرد. بسیاری از مردم دعوت او را نپذیرفتند، اما او با شکیبایی به راه خود ادامه داد. به فرمان خدا کشتی بزرگی ساخته شد و در زمان طوفان، مؤمنان و جفت‌هایی از جانوران در آن جای گرفتند. داستان نوح در قرآن نمونه‌ای از پایداری در راه حق و اهمیت امید است.",lessons:"صبر، پایداری، اعتماد به خدا و مهربانی با آفریدگان."},
+{id:4,name:"حضرت هود (ع)",symbol:"🌬️",category:"پیامبر",tags:"قوم عاد غرور",summary:"دعوت قوم عاد به فروتنی و پرهیز از غرور.",text:"حضرت هود (ع) برای هدایت قوم عاد فرستاده شد. قوم عاد از توانایی و امکانات خود مغرور شده بودند. هود آنان را به پرستش خدا، عدالت و فروتنی دعوت کرد و از سرانجام ستم و تکبر هشدار داد. در روایت قرآنی، گروهی از مردم نپذیرفتند و سرانجام با عذابی الهی روبه‌رو شدند. این داستان بر ناپایداری قدرت همراه با غرور تأکید می‌کند.",lessons:"فروتنی، عدالت و استفادهٔ درست از نعمت‌ها."},
+{id:5,name:"حضرت صالح (ع)",symbol:"🐪",category:"پیامبر",tags:"قوم ثمود ناقه",summary:"دعوت قوم ثمود و ماجرای نشانهٔ الهی.",text:"حضرت صالح (ع) قوم ثمود را به یکتاپرستی و درستکاری دعوت کرد. آنان نشانه‌ای روشن خواستند و در روایت قرآن، ناقه به عنوان نشانه‌ای الهی مطرح شد. به مردم سفارش شد به آن آسیب نرسانند و حق آن را رعایت کنند؛ اما گروهی سرپیچی کردند. داستان صالح دربارهٔ احترام به نشانه‌ها، رعایت حق دیگران و پرهیز از سرکشی است.",lessons:"رعایت حق، مسئولیت‌پذیری و پرهیز از لجاجت."},
+{id:6,name:"حضرت ابراهیم (ع)",symbol:"🔥",category:"اولوالعزم",tags:"بت شکنی آتش کعبه",summary:"جست‌وجوی حقیقت، ایستادگی و بنای کعبه.",text:"حضرت ابراهیم (ع) از کودکی دربارهٔ پرستش بت‌ها و باورهای نادرست قوم خود اندیشید. او مردم را به پرستش خدای یگانه فراخواند و با شجاعت در برابر بت‌پرستی ایستاد. در روایت قرآن، آتش برای او سرد و ایمن شد. ابراهیم همراه فرزندش اسماعیل در ساختن پایه‌های کعبه مشارکت کرد. زندگی او نمونه‌ای از ایمان، تفکر و مهمان‌نوازی است.",lessons:"اندیشیدن، شجاعت اخلاقی، توکل و مهمان‌نوازی."},
+{id:7,name:"حضرت لوط (ع)",symbol:"🏘️",category:"پیامبر",tags:"قوم لوط اخلاق",summary:"دعوت مردم به پاکی، عدالت و دوری از فساد.",text:"حضرت لوط (ع) مردم را به پاکدامنی، رعایت حقوق دیگران و دوری از رفتارهای نادرست دعوت می‌کرد. او در برابر بی‌عدالتی و فساد ایستاد و از مردم خواست راه درست را انتخاب کنند. داستان او در قرآن با تأکید بر مسئولیت اخلاقی جامعه و پیامدهای ستم آمده است.",lessons:"پاکی، احترام به دیگران و مقابله با بی‌عدالتی."},
+{id:8,name:"حضرت اسماعیل (ع)",symbol:"🌙",category:"پیامبر",tags:"وفاداری کعبه",summary:"نمونه‌ای از وفاداری و همکاری در بنای کعبه.",text:"حضرت اسماعیل (ع) فرزند حضرت ابراهیم (ع) بود. در قرآن از او به عنوان پیامبری درست‌وعده و شکیبا یاد شده است. او همراه پدرش در بنای کعبه همکاری کرد. ماجرای آزمون بزرگ ابراهیم و اسماعیل نیز در منابع دینی نشانه‌ای از تسلیم در برابر فرمان خدا و مهربانی او دانسته می‌شود.",lessons:"وفای به عهد، همکاری با خانواده و شکیبایی."},
+{id:9,name:"حضرت اسحاق (ع)",symbol:"✨",category:"پیامبر",tags:"ابراهیم بشارت",summary:"فرزند حضرت ابراهیم و از پیامبران بنی‌اسرائیل.",text:"حضرت اسحاق (ع) فرزند حضرت ابراهیم (ع) و از پیامبران الهی بود. در قرآن، ولادت او به خانوادهٔ ابراهیم بشارت داده شده است. نسل او در روایت‌های دینی با پیامبران بزرگی پیوند دارد. داستان کوتاه اسحاق یادآور امید، نعمت خانواده و ادامهٔ راه هدایت است.",lessons:"امید، شکرگزاری و ادامه دادن راه نیکی."},
+{id:10,name:"حضرت یعقوب (ع)",symbol:"🕊️",category:"پیامبر",tags:"یوسف خانواده صبر",summary:"پدری شکیبا که امید خود را از دست نداد.",text:"حضرت یعقوب (ع) پدر حضرت یوسف (ع) بود. هنگامی که یوسف از او دور شد، یعقوب سال‌ها اندوهگین بود، اما امید خود را به رحمت خدا از دست نداد. او فرزندانش را به جست‌وجوی امید و ناامید نشدن سفارش کرد. در پایان، خانواده دوباره به هم رسیدند. این داستان جایگاه صبر و امید را نشان می‌دهد.",lessons:"امیدواری، صبر و مهربانی با خانواده."},
+{id:11,name:"حضرت یوسف (ع)",symbol:"🌾",category:"پیامبر",tags:"خواب زندان مصر بخشش",summary:"داستان صبر، پاکدامنی، دانایی و بخشش.",text:"حضرت یوسف (ع) در کودکی خوابی دید که از آینده‌ای ویژه خبر می‌داد. برادرانش از روی حسادت او را از خانواده دور کردند. یوسف پس از دشواری‌های فراوان به مصر رسید و مدتی زندانی شد؛ اما پاکدامنی و درستکاری خود را حفظ کرد. او با دانایی خواب پادشاه را تعبیر کرد و به جایگاهی مهم رسید. هنگامی که برادرانش نزد او آمدند، آنان را بخشید. داستان یوسف در قرآن نمونه‌ای از صبر، پاکدامنی، تدبیر و گذشت است.",lessons:"صبر در سختی، پاکدامنی، دانایی، بخشش و امید."},
+{id:12,name:"حضرت ایوب (ع)",symbol:"🌿",category:"پیامبر",tags:"صبر شکیبایی",summary:"نماد شکیبایی و سپاسگزاری در روزهای دشوار.",text:"حضرت ایوب (ع) در روایت قرآنی با آزمون‌های دشوار روبه‌رو شد. او با دعا و امید به خداوند پناه برد و از رحمت او ناامید نشد. خداوند نیز سختی او را برطرف کرد. داستان ایوب در فرهنگ دینی نماد صبر و پایداری است؛ صبری که همراه با تلاش و امید معنا پیدا می‌کند.",lessons:"شکیبایی، دعا، امید و سپاسگزاری."},
+{id:13,name:"حضرت شعیب (ع)",symbol:"⚖️",category:"پیامبر",tags:"مدین عدالت ترازو",summary:"دعوت به درستکاری در معامله و رعایت حق مردم.",text:"حضرت شعیب (ع) مردم مدین را به پرستش خدا و رعایت عدالت دعوت کرد. او به آنان سفارش می‌کرد در خریدوفروش کم‌فروشی نکنند و حق مردم را کامل بدهند. داستان شعیب نشان می‌دهد ایمان فقط در گفتار نیست و باید در رفتار روزمره، کسب‌وکار و رعایت حقوق دیگران دیده شود.",lessons:"امانت‌داری، انصاف، درستکاری و رعایت حقوق مردم."},
+{id:14,name:"حضرت موسی (ع)",symbol:"🌊",category:"اولوالعزم",tags:"فرعون دریا تورات",summary:"ایستادگی در برابر فرعون و رهایی بنی‌اسرائیل.",text:"حضرت موسی (ع) در زمان فرعون به دنیا آمد. به خواست خدا از خطر نجات یافت و در کاخ فرعون پرورش پیدا کرد. او بعدها به پیامبری برگزیده شد و مأمور شد فرعون را به عدالت و پرستش خدا دعوت کند. موسی با یاری خدا بنی‌اسرائیل را از ستم فرعون رهایی بخشید. داستان او در قرآن بر شجاعت، آزادی‌خواهی و یاری خداوند تأکید دارد.",lessons:"شجاعت، عدالت‌خواهی، مسئولیت و یاری ستمدیدگان."},
+{id:15,name:"حضرت هارون (ع)",symbol:"🤝",category:"پیامبر",tags:"موسی همراهی",summary:"برادر و همراه حضرت موسی در دعوت مردم.",text:"حضرت هارون (ع) برادر حضرت موسی (ع) و پیامبر الهی بود. موسی از خدا خواست هارون را یاور و همراه او قرار دهد تا در رساندن پیام الهی کمکش کند. هارون در هدایت بنی‌اسرائیل نقش داشت. داستان او ارزش همکاری، همراهی و کمک به انجام کار درست را یادآوری می‌کند.",lessons:"همکاری، مهربانی و یاری رساندن در کارهای نیک."},
+{id:16,name:"حضرت ذوالکفل (ع)",symbol:"📜",category:"پیامبر",tags:"صبر وفای عهد",summary:"در قرآن در شمار بندگان شکیبا و نیکوکار آمده است.",text:"نام حضرت ذوالکفل (ع) در قرآن در کنار پیامبران و بندگان شکیبا یاد شده است. دربارهٔ جزئیات زندگی و زمان او گزارش‌های گوناگونی وجود دارد و نمی‌توان همهٔ آن‌ها را قطعی دانست. آنچه در یادکرد قرآنی برجسته است، صبر و نیکوکاری است.",lessons:"پایبندی به مسئولیت، صبر و نیکوکاری."},
+{id:17,name:"حضرت داوود (ع)",symbol:"🎵",category:"پیامبر",tags:"زبور عدالت",summary:"پیامبری که به حکمت و داوری عادلانه شناخته می‌شود.",text:"حضرت داوود (ع) پیامبر و فرمانروایی بود که در قرآن از نعمت حکمت و کتاب زبور برخوردار شد. او به عدالت در داوری سفارش شده بود و باید میان مردم با انصاف رفتار می‌کرد. داستان داوود نشان می‌دهد قدرت و مسئولیت باید همراه با عدالت و فروتنی باشد.",lessons:"عدالت، حکمت، فروتنی و مسئولیت‌پذیری."},
+{id:18,name:"حضرت سلیمان (ع)",symbol:"🦜",category:"پیامبر",tags:"مورچه هدهد حکمت",summary:"فرمانروایی دانا که نعمت‌های خدا را سپاس می‌گفت.",text:"حضرت سلیمان (ع) پیامبری بود که در قرآن از دانش و فرمانروایی ویژه برخوردار بود. داستان گفت‌وگوی او با مورچه و ماجرای هدهد از بخش‌های شناخته‌شدهٔ روایت زندگی اوست. سلیمان با دیدن نعمت‌ها آن‌ها را از خدا می‌دانست و سپاسگزاری می‌کرد. داستان او بر دانش، عدالت و شکرگزاری تأکید دارد.",lessons:"شکرگزاری، توجه به آفریدگان، عدالت و فروتنی."},
+{id:19,name:"حضرت الیاس (ع)",symbol:"⛰️",category:"پیامبر",tags:"دعوت یکتاپرستی",summary:"دعوت مردم به پرستش خدای یگانه.",text:"حضرت الیاس (ع) در قرآن از پیامبران نیکوکار معرفی شده است. او مردم را از پرستش بت‌ها بازمی‌داشت و به عبادت خدای یگانه دعوت می‌کرد. یاد او نمونه‌ای از ایستادگی در راه دعوت به نیکی و حقیقت است.",lessons:"پایبندی به حقیقت و دعوت مهربانانه به نیکی."},
+{id:20,name:"حضرت الیسع (ع)",symbol:"🌄",category:"پیامبر",tags:"نیکی هدایت",summary:"پیامبری که در قرآن از نیکان شمرده شده است.",text:"حضرت الیسع (ع) در قرآن در شمار پیامبران و نیکان آمده است. دربارهٔ جزئیات زندگی او اطلاعات قطعی و یکسانی در همهٔ منابع وجود ندارد. یادکرد قرآنی او ما را به ارزش هدایت، نیکوکاری و پیروی از راه پیامبران توجه می‌دهد.",lessons:"نیکوکاری، ایمان و خدمت به مردم."},
+{id:21,name:"حضرت یونس (ع)",symbol:"🐋",category:"پیامبر",tags:"ماهی دعا بازگشت",summary:"دعایی از دل تاریکی و بازگشت به سوی خدا.",text:"حضرت یونس (ع) برای هدایت مردم فرستاده شد. او مدتی از میان قوم خود رفت و در ماجرایی شگفت‌انگیز در دل دریا و شکم ماهی قرار گرفت. یونس به دعا و یاد خدا پرداخت و خداوند او را نجات داد. سپس مردم قومش ایمان آوردند. داستان او بر بازگشت، دعا و امید تأکید می‌کند.",lessons:"دعا، پذیرش مسئولیت، بازگشت و ناامید نشدن."},
+{id:22,name:"حضرت زکریا (ع)",symbol:"🌸",category:"پیامبر",tags:"دعا یحیی",summary:"پیامبری که با امید از خداوند فرزند خواست.",text:"حضرت زکریا (ع) پیامبری نیکوکار بود. او با وجود سالخوردگی، با امید و فروتنی از خداوند فرزندی شایسته درخواست کرد. خداوند دعای او را پذیرفت و حضرت یحیی (ع) به او بشارت داده شد. داستان زکریا یادآور ارزش دعا و امید در هر شرایطی است.",lessons:"امید، دعا، فروتنی و اعتماد به خدا."},
+{id:23,name:"حضرت یحیی (ع)",symbol:"🕯️",category:"پیامبر",tags:"زکریا پاکی",summary:"پیامبری جوان که به پاکی و پرهیزکاری شناخته می‌شود.",text:"حضرت یحیی (ع) فرزند حضرت زکریا (ع) بود. در قرآن از او با ویژگی‌هایی مانند پاکی، مهربانی و نیکوکاری یاد شده است. او از کودکی اهل حکمت و بندگی خدا بود و مردم را به راه درست دعوت می‌کرد.",lessons:"پاکی، مهربانی، خردمندی و احترام به پدر و مادر."},
+{id:24,name:"حضرت عیسی (ع)",symbol:"🕊️",category:"اولوالعزم",tags:"مریم انجیل معجزه",summary:"پیامبری بزرگ که با اذن خدا معجزات داشت.",text:"حضرت عیسی (ع) فرزند حضرت مریم (س) است و در قرآن پیامبری بزرگ معرفی شده است. تولد او نشانه‌ای از قدرت خداوند دانسته می‌شود. عیسی مردم را به پرستش خدا، مهربانی و پاکی دعوت می‌کرد. در قرآن آمده است که او به اذن خدا بیماران را شفا می‌داد و معجزات دیگری داشت. مسلمانان برای حضرت عیسی و مادرش احترام ویژه‌ای قائل‌اند.",lessons:"مهربانی، پاکی، فروتنی و یکتاپرستی."},
+{id:25,name:"حضرت محمد (ص)",symbol:"☼",category:"اولوالعزم",tags:"قرآن رحمت اخلاق",summary:"آخرین پیامبر و آورندهٔ پیام قرآن و رحمت.",text:"حضرت محمد (ص) در شهر مکه به دنیا آمد و در بزرگسالی به پیامبری برگزیده شد. او مردم را به یکتاپرستی، عدالت، مهربانی و دوری از ستم دعوت کرد. قرآن بر او نازل شد و پیام اسلام را به مردم رساند. پیامبر اسلام در رفتار خود به راستگویی، امانت‌داری، گذشت و خوش‌رفتاری شناخته می‌شد. مسلمانان او را خاتم پیامبران می‌دانند.",lessons:"راستگویی، امانت‌داری، مهربانی، عدالت و گذشت."}
+];
+const quizData=[
+{q:"کدام پیامبر به ساخت کشتی به فرمان خدا شناخته می‌شود؟",a:["حضرت نوح (ع)","حضرت داوود (ع)","حضرت یونس (ع)"],c:0},
+{q:"داستان کدام پیامبر با خواب و تعبیر خواب پیوند دارد؟",a:["حضرت هود (ع)","حضرت یوسف (ع)","حضرت صالح (ع)"],c:1},
+{q:"کدام پیامبر با فرعون روبه‌رو شد؟",a:["حضرت موسی (ع)","حضرت ادریس (ع)","حضرت ایوب (ع)"],c:0},
+{q:"کدام پیامبر در قرآن با ماجرای ماهی یاد شده است؟",a:["حضرت اسماعیل (ع)","حضرت یونس (ع)","حضرت هارون (ع)"],c:1},
+{q:"کدام پیامبر همراه فرزندش در ساخت کعبه همکاری کرد؟",a:["حضرت ابراهیم (ع)","حضرت سلیمان (ع)","حضرت زکریا (ع)"],c:0},
+{q:"آخرین پیامبر در باور اسلامی چه کسی است؟",a:["حضرت عیسی (ع)","حضرت موسی (ع)","حضرت محمد (ص)"],c:2},
+{q:"کدام پیامبر به عدالت در معامله و کم‌فروشی نکردن سفارش می‌کرد؟",a:["حضرت شعیب (ع)","حضرت لوط (ع)","حضرت الیاس (ع)"],c:0}
+];
+const timelineIds=[1,3,6,8,10,11,14,17,18,21,22,23,24,25];
+const KEY="dastanPayambaran_v2";
+let state={favorites:[],read:[],notes:{},points:0,theme:"dark",font:15,quizDone:[],dailyDone:""};
+let currentStory=null,quizIndex=0,quizStarted=false,quizAnswered=false,showFavOnly=false;
+function loadState(){try{const x=JSON.parse(localStorage.getItem(KEY)||"{}");state={...state,...x}}catch(e){}document.body.classList.toggle("light",state.theme==="light");document.documentElement.style.setProperty("--base-font",state.font+"px");}
+function saveState(){try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}updateStats();}
+function toast(t){const el=document.getElementById("toast");el.textContent=t;el.classList.add("show");setTimeout(()=>el.classList.remove("show"),2300)}
+function updateStats(){document.getElementById("statStories").textContent=stories.length;document.getElementById("statFav").textContent=state.favorites.length;document.getElementById("statPoints").textContent=state.points;document.getElementById("readCount").textContent=state.read.length;document.getElementById("readProgress").style.width=(state.read.length/stories.length*100)+"%";renderSaved();}
+function renderStories(){const q=document.getElementById("search").value.trim().toLowerCase(),cat=document.getElementById("category").value,sort=document.getElementById("sort").value;let list=stories.filter(s=>(!showFavOnly||state.favorites.includes(s.id))&&(cat==="all"||s.category===cat|| (cat==="آموزه"&&s.lessons))&&[s.name,s.summary,s.tags,s.text].join(" ").toLowerCase().includes(q));if(sort==="az")list.sort((a,b)=>a.name.localeCompare(b.name,"fa"));const grid=document.getElementById("storyGrid");grid.innerHTML="";if(!list.length){grid.innerHTML='<div class="empty">موردی پیدا نشد. عبارت دیگری جست‌وجو کن.</div>';return}list.forEach(s=>{const el=document.createElement("article");el.className="story-card";el.innerHTML=`<div class="card-top"><div class="avatar">${s.symbol}</div><span class="tag">${s.category}</span></div><h3>${s.name}</h3><p>${s.summary}</p><div class="card-actions"><button class="btn small primary" onclick="openStory(${s.id})">خواندن داستان</button><button class="btn small" onclick="quickFavorite(${s.id})">${state.favorites.includes(s.id)?"★":"☆"}</button></div>`;grid.appendChild(el)});}
+function openStory(id){const s=stories.find(x=>x.id===id);if(!s)return;currentStory=s;state.read=[...new Set([...state.read,id])];document.getElementById("detailTitle").textContent=s.name;document.getElementById("detailText").textContent=s.text;document.getElementById("detailLessons").textContent=s.lessons;document.getElementById("storyNote").value=state.notes[id]||"";updateFavButton();document.getElementById("detail").classList.add("show");saveState();document.getElementById("detailSection").scrollIntoView({behavior:"smooth"});}
+function closeDetail(){document.getElementById("detail").classList.remove("show");stopSpeak()}
+function updateFavButton(){if(!currentStory)return;const yes=state.favorites.includes(currentStory.id);document.getElementById("favBtn").textContent=yes?"★ حذف از علاقه‌مندی":"☆ افزودن به علاقه‌مندی"}
+function toggleCurrentFavorite(){if(!currentStory)return;quickFavorite(currentStory.id);updateFavButton()}
+function quickFavorite(id){state.favorites=state.favorites.includes(id)?state.favorites.filter(x=>x!==id):[...state.favorites,id];saveState();renderStories();updateFavButton();toast(state.favorites.includes(id)?"به علاقه‌مندی‌ها اضافه شد":"از علاقه‌مندی‌ها حذف شد")}
+function showFavorites(){showFavOnly=!showFavOnly;document.getElementById("stories").scrollIntoView({behavior:"smooth"});toast(showFavOnly?"فقط علاقه‌مندی‌ها نمایش داده می‌شوند":"همهٔ داستان‌ها نمایش داده می‌شوند");renderStories()}
+function saveNote(){if(!currentStory)return;state.notes[currentStory.id]=document.getElementById("storyNote").value;saveState();toast("یادداشت ذخیره شد")}
+function renderSaved(){const fav=document.getElementById("favoriteList"),notes=document.getElementById("notesList");if(!fav||!notes)return;fav.innerHTML=state.favorites.length?state.favorites.map(id=>{let s=stories.find(x=>x.id===id);return s?`<p><button class="btn small" onclick="openStory(${id})">${s.name}</button></p>`:""}).join(""):"هنوز داستانی ذخیره نشده است.";const ns=Object.entries(state.notes).filter(([k,v])=>v.trim());notes.innerHTML=ns.length?ns.map(([id,v])=>`<p><b>${stories.find(s=>s.id==id)?.name||"داستان"}:</b><br>${escapeHTML(v)}</p>`).join(""):"یادداشتی ثبت نشده است."}
+function escapeHTML(s){return s.replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function speakStory(){if(!currentStory)return;if(!("speechSynthesis"in window)){toast("خواندن صوتی در این مرورگر پشتیبانی نمی‌شود");return}stopSpeak();const u=new SpeechSynthesisUtterance(currentStory.name+". "+currentStory.text);u.lang="fa-IR";u.rate=.9;speechSynthesis.speak(u)}
+function stopSpeak(){if("speechSynthesis"in window)speechSynthesis.cancel()}
+async function shareStory(){if(!currentStory)return;const text=currentStory.name+"\n"+currentStory.text;if(navigator.share){try{await navigator.share({title:currentStory.name,text})}catch(e){}}else{try{await navigator.clipboard.writeText(text);toast("متن داستان کپی شد")}catch(e){toast("اشتراک‌گذاری در این مرورگر در دسترس نیست")}}}
+function printStory(){if(!currentStory)return;const w=window.open("","_blank");if(!w){toast("اجازهٔ بازشدن پنجره را بده");return}w.document.write(`<html lang="fa" dir="rtl"><meta charset="UTF-8"><title>${currentStory.name}</title><body style="font-family:Tahoma;line-height:2;padding:30px"><h2>${currentStory.name}</h2><p>${currentStory.text}</p><h3>درس‌های داستان</h3><p>${currentStory.lessons}</p></body></html>`);w.document.close();w.print()}
+function go(id){const el=document.getElementById(id);if(el)el.scrollIntoView({behavior:"smooth"});}
+function toggleTheme(){state.theme=state.theme==="light"?"dark":"light";document.body.classList.toggle("light",state.theme==="light");saveState()}
+function openSettings(){document.getElementById("fontSize").value=state.font;document.getElementById("settingsModal").classList.add("open")}
+function closeSettings(){document.getElementById("settingsModal").classList.remove("open")}
+function changeFont(){state.font=Number(document.getElementById("fontSize").value);document.body.style.fontSize=state.font+"px";saveState()}
+function resetProgress(){if(!confirm("همهٔ امتیازها، علاقه‌مندی‌ها، یادداشت‌ها و پیشرفت پاک شود؟"))return;state={favorites:[],read:[],notes:{},points:0,theme:state.theme,font:state.font,quizDone:[],dailyDone:""};saveState();renderStories();toast("پیشرفت پاک شد");closeSettings()}
+function nextQuestion(){if(!quizStarted){quizStarted=true;quizIndex=0;quizAnswered=false;showQuestion();return}if(!quizAnswered){toast("اول یک گزینه انتخاب کن");return}quizIndex++;if(quizIndex>=quizData.length){document.getElementById("quizQuestion").textContent="آزمون تمام شد!";document.getElementById("quizAnswers").innerHTML="";document.getElementById("quizCounter").textContent="آفرین! امتیاز فعلی: "+state.points;document.getElementById("nextQuiz").textContent="شروع دوباره";quizStarted=false;return}quizAnswered=false;showQuestion()}
+function showQuestion(){const q=quizData[quizIndex];document.getElementById("quizCounter").textContent=`سؤال ${quizIndex+1} از ${quizData.length}`;document.getElementById("quizQuestion").textContent=q.q;document.getElementById("quizFeedback").textContent="";document.getElementById("nextQuiz").textContent="سؤال بعدی";document.getElementById("quizAnswers").innerHTML=q.a.map((a,i)=>`<button class="answer" onclick="answerQuestion(${i})">${a}</button>`).join("")}
+function answerQuestion(i){if(quizAnswered)return;quizAnswered=true;const q=quizData[quizIndex],buttons=[...document.querySelectorAll("#quizAnswers .answer")];buttons[q.c].classList.add("correct");if(i===q.c){state.points+=10;document.getElementById("quizFeedback").textContent="پاسخ درست! ۱۰ امتیاز گرفتی.";toast("۱۰ امتیاز اضافه شد")}else{buttons[i].classList.add("wrong");document.getElementById("quizFeedback").textContent="این گزینه درست نبود. پاسخ صحیح مشخص شده است."}buttons.forEach(b=>b.disabled=true);saveState()}
+function dailyOpen(){const q=quizData[new Date().getDate()%quizData.length];document.getElementById("dailyQuestion").textContent=q.q;document.getElementById("dailyResult").textContent="";document.getElementById("dailyAnswers").innerHTML=q.a.map((a,i)=>`<button class="answer" onclick="dailyAnswer(${i},${q.c})">${a}</button>`).join("");document.getElementById("dailyModal").classList.add("open")}
+function dailyAnswer(i,c){if(state.dailyDone===new Date().toDateString()){toast("سؤال امروز را قبلاً پاسخ داده‌ای");return}if(i===c){state.points+=10;state.dailyDone=new Date().toDateString();document.getElementById("dailyResult").textContent="آفرین! پاسخ درست بود و ۱۰ امتیاز گرفتی."}else{document.getElementById("dailyResult").textContent="پاسخ درست این بار گزینهٔ دیگری بود. فردا دوباره تلاش کن."}saveState();document.querySelectorAll("#dailyAnswers button").forEach(b=>b.disabled=true)}
+function closeDaily(){document.getElementById("dailyModal").classList.remove("open")}
+function openDailyStory(){openStory(11)}
+function renderTimeline(){const el=document.getElementById("timelineList");el.innerHTML=timelineIds.map(id=>{const s=stories.find(x=>x.id===id);return `<div class="timeitem"><b>${s.name}</b><div class="muted">${s.summary}</div><button class="btn small" onclick="openStory(${id})">مشاهدهٔ داستان</button></div>`}).join("")}
+function exportData(){const blob=new Blob([JSON.stringify(state,null,2)],{type:"application/json"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="dastan-payambaran-backup.json";a.click();URL.revokeObjectURL(a.href);toast("فایل پشتیبان آماده شد")}
+function importData(e){const file=e.target.files[0];if(!file)return;const reader=new FileReader();reader.onload=()=>{try{const data=JSON.parse(reader.result);state={...state,...data};saveState();loadState();renderStories();toast("اطلاعات بازیابی شد")}catch(err){toast("فایل پشتیبان معتبر نیست")}};reader.readAsText(file);e.target.value=""}
+function openBazaar(){const packageId="";if(packageId.trim()){window.open("https://cafebazaar.ir/app/"+encodeURIComponent(packageId.trim()),"_blank")}else{window.open("https://cafebazaar.ir/","_blank");toast("پس از انتشار، شناسهٔ بسته را در کد جایگزین کن تا لینک مستقیم برنامه فعال شود.")}}
+function init(){loadState();document.body.style.fontSize=state.font+"px";renderStories();renderTimeline();updateStats();document.getElementById("dailyTitle").textContent="داستان حضرت یوسف (ع)";document.getElementById("dailyDesc").textContent="داستان صبر، پاکدامنی، دانایی و بخشش"}
+init();
+</script>
+</body>
+  </html><!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#101827">
+<title>داستان پیامبران | دانشنامهٔ داستان‌های دینی</title>
+<style>
+:root{--bg:#0b1220;--panel:#121e30;--panel2:#19283d;--text:#eef4ff;--muted:#a8b6ca;--gold:#e8bd68;--gold2:#ffe2a0;--line:#293a52;--good:#70d6a0;--danger:#ff8585;--shadow:0 18px 50px #0005}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 85% 0%,#24334a 0,transparent 34%),var(--bg);color:var(--text);font-family:Tahoma,Arial,sans-serif;line-height:1.9;transition:.25s}
+body.light{--bg:#f3f5f8;--panel:#fff;--panel2:#edf1f6;--text:#172235;--muted:#64748b;--gold:#9a6a18;--gold2:#70480c;--line:#d9e0e9;--shadow:0 14px 35px #17223512;background:linear-gradient(130deg,#fff8e8,#f3f5f8 45%)}
+button,input,select,textarea{font:inherit}button{cursor:pointer;border:0}a{color:inherit;text-decoration:none}.wrap{width:min(1180px,94%);margin:auto}
+.topbar{position:sticky;top:0;z-index:20;background:#0b1220df;backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.light .topbar{background:#ffffffdf}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 0}.brand{display:flex;align-items:center;gap:10px;font-weight:900}.logo{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(145deg,#ffe5a4,#b77b24);color:#1b2230;font-size:22px;box-shadow:0 6px 20px #d5a34a33}
+.navlinks{display:flex;gap:6px;flex-wrap:wrap}.navlinks button,.iconbtn{background:transparent;color:var(--muted);padding:8px 11px;border-radius:10px}.navlinks button:hover,.iconbtn:hover{background:var(--panel2);color:var(--text)}.navright{display:flex;gap:6px;align-items:center}
+.hero{padding:58px 0 30px;display:grid;grid-template-columns:1.4fr .8fr;gap:25px;align-items:center}.eyebrow{color:var(--gold2);font-weight:bold;font-size:13px;letter-spacing:.4px}.hero h1{font-size:clamp(30px,5vw,54px);line-height:1.45;margin:10px 0}.hero p{color:var(--muted);max-width:680px}.hero-card{background:linear-gradient(145deg,#263750,#142033);border:1px solid #53647b55;border-radius:26px;padding:26px;box-shadow:var(--shadow);text-align:center}.light .hero-card{background:linear-gradient(145deg,#fff1cf,#fff)}.hero-symbol{font-size:66px;margin:4px}.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:18px}.stat{background:#ffffff12;border-radius:14px;padding:10px}.stat b{display:block;font-size:20px;color:var(--gold2)}.stat span{font-size:11px;color:var(--muted)}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.btn{padding:10px 16px;border-radius:12px;background:var(--panel2);color:var(--text);border:1px solid var(--line);font-weight:bold}.btn.primary{background:linear-gradient(135deg,#f2d28e,#c18a37);color:#20202a;border:0}.btn.outline{background:transparent;border-color:var(--gold);color:var(--gold2)}.btn.small{padding:6px 10px;font-size:12px}.btn:disabled{opacity:.45;cursor:not-allowed}
+.section{padding:25px 0 34px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-bottom:17px}.section h2{margin:0;font-size:24px}.section-head p{margin:4px 0 0;color:var(--muted);font-size:13px}
+.toolbar{display:grid;grid-template-columns:1fr 180px 150px;gap:9px;margin:16px 0}.field{width:100%;background:var(--panel);border:1px solid var(--line);border-radius:12px;color:var(--text);padding:11px 13px;outline:none}.field:focus{border-color:var(--gold)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.story-card{background:var(--panel);border:1px solid var(--line);border-radius:17px;padding:16px;transition:.2s;box-shadow:0 6px 18px #0000000a}.story-card:hover{transform:translateY(-3px);border-color:#c99a4f88}.card-top{display:flex;justify-content:space-between;align-items:center}.avatar{width:45px;height:45px;border-radius:14px;display:grid;place-items:center;background:var(--panel2);font-size:23px}.tag{font-size:11px;color:var(--gold2);background:#c99a4f18;padding:3px 8px;border-radius:20px}.story-card h3{margin:10px 0 3px}.story-card p{font-size:13px;color:var(--muted);margin:0 0 12px;min-height:50px}.card-actions{display:flex;gap:7px;align-items:center}.card-actions .btn{flex:1}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:20px;box-shadow:var(--shadow)}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:14px}.daily{border-color:#b98b45aa;background:linear-gradient(140deg,var(--panel),#a77b2a12)}.daily h3{margin:4px 0}.muted{color:var(--muted)}.progress{height:9px;background:var(--panel2);border-radius:20px;overflow:hidden}.progress span{display:block;height:100%;background:linear-gradient(90deg,#c18a37,#ffe1a0);width:0%;transition:.3s}
+.tabs{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:14px}.tab{padding:8px 13px;border-radius:10px;background:var(--panel2);color:var(--muted)}.tab.active{background:var(--gold);color:#1b2230;font-weight:bold}
+.detail{display:none}.detail.show{display:block}.detail h2{color:var(--gold2)}.detail-text{white-space:pre-line;font-size:15px}.detail-tools{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0}
+.quiz-q{font-size:18px;font-weight:bold;margin:8px 0 15px}.answer{display:block;width:100%;text-align:right;margin:8px 0;padding:11px 13px;background:var(--panel2);border:1px solid var(--line);color:var(--text);border-radius:12px}.answer.correct{border-color:var(--good);background:#2c9b6418}.answer.wrong{border-color:var(--danger);background:#c44b4b18}
+.timeline{border-right:2px solid var(--gold);margin:10px 15px;padding-right:20px}.timeitem{position:relative;margin:0 0 18px}.timeitem:before{content:"";position:absolute;right:-27px;top:9px;width:11px;height:11px;background:var(--gold);border-radius:50%;box-shadow:0 0 0 4px var(--panel)}
+footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:12px;text-align:center;margin-top:25px}
+.modal{position:fixed;inset:0;background:#0009;z-index:50;display:none;align-items:center;justify-content:center;padding:15px}.modal.open{display:flex}.modal-box{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:20px;width:min(620px,100%);max-height:85vh;overflow:auto}.modal-head{display:flex;justify-content:space-between;align-items:center}.close{background:var(--panel2);color:var(--text);border-radius:9px;padding:5px 10px}.toast{position:fixed;bottom:18px;left:50%;transform:translate(-50%,100px);background:#1d2c40;color:#fff;padding:10px 17px;border-radius:12px;z-index:80;transition:.3s;box-shadow:var(--shadow);max-width:90%;text-align:center}.toast.show{transform:translate(-50%,0)}.empty{padding:25px;text-align:center;color:var(--muted);grid-column:1/-1}.hidden{display:none!important}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:35px}.hero-card{display:none}.grid{grid-template-columns:repeat(2,1fr)}.navlinks{display:none}.toolbar{grid-template-columns:1fr 1fr}.toolbar input{grid-column:1/-1}}
+@media(max-width:520px){.grid,.two-col{grid-template-columns:1fr}.section h2{font-size:21px}.hero h1{font-size:32px}.toolbar{grid-template-columns:1fr}.toolbar input{grid-column:auto}.nav{padding:9px 0}.brand{font-size:14px}}
+</style>
+</head>
+<body>
+<header class="topbar">
+ <div class="wrap nav">
+  <div class="brand"><div class="logo">✦</div><span>داستان پیامبران</span></div>
+  <nav class="navlinks">
+   <button onclick="go('home')">خانه</button><button onclick="go('stories')">داستان‌ها</button><button onclick="go('quiz')">آزمون</button><button onclick="go('timeline')">خط زمانی</button><button onclick="go('about')">درباره</button>
+  </nav>
+  <div class="navright"><button class="iconbtn" onclick="toggleTheme()" title="تغییر پوسته">◐</button><button class="iconbtn" onclick="openSettings()" title="تنظیمات">⚙</button></div>
+ </div>
+</header>
+<main class="wrap">
+<section id="home" class="hero">
+ <div>
+  <div class="eyebrow">دانشنامهٔ داستان‌ها و آموزه‌های دینی</div>
+  <h1>سفری آموزنده در زندگی پیامبران</h1>
+  <p>با داستان‌های پیامبران و امامان، رویدادهای مهم، درس‌های اخلاقی و پرسش‌های دانستنی آشنا شو. هر روز چیزی تازه یاد بگیر و مسیر مطالعه‌ات را ادامه بده.</p>
+  <div class="actions"><button class="btn primary" onclick="go('stories')">شروع مطالعه ←</button><button class="btn outline" onclick="dailyOpen()">سؤال روز</button><button class="btn" onclick="openBazaar()">باز کردن و دانلود در بازار</button></div>
+ </div>
+ <div class="hero-card"><div class="hero-symbol">☼</div><h2>دانایی، چراغ راه است</h2><div class="muted">مطالعه کن، بیاموز و مهربانی را تمرین کن.</div>
+  <div class="hero-stats"><div class="stat"><b id="statStories">25</b><span>پیامبر</span></div><div class="stat"><b id="statFav">0</b><span>علاقه‌مندی</span></div><div class="stat"><b id="statPoints">0</b><span>امتیاز</span></div></div>
+ </div>
+</section>
+<section class="section" id="quick">
+ <div class="section-head"><div><h2>ادامهٔ مسیر یادگیری</h2><p>پیشرفت مطالعه و فعالیت‌های تو</p></div></div>
+ <div class="two-col">
+  <div class="panel"><div class="muted">داستان‌های خوانده‌شده</div><h2><span id="readCount">0</span> از 25</h2><div class="progress"><span id="readProgress"></span></div><p class="muted" style="font-size:12px">با باز کردن هر داستان، آن را به فهرست مطالعه‌شده‌ها اضافه کن.</p></div>
+  <div class="panel daily"><div class="eyebrow">پیشنهاد امروز</div><h3 id="dailyTitle">داستان حضرت یوسف (ع)</h3><p class="muted" id="dailyDesc">داستان صبر، پاکدامنی و بخشش</p><button class="btn small primary" onclick="openDailyStory()">مطالعهٔ پیشنهاد</button></div>
+ </div>
+</section>
+<section class="section" id="stories">
+ <div class="section-head"><div><h2>کتابخانهٔ داستان‌ها</h2><p>جست‌وجو کن، دسته‌بندی را انتخاب کن و داستان دلخواهت را بخوان.</p></div><button class="btn small" onclick="showFavorites()">★ علاقه‌مندی‌ها</button></div>
+ <div class="toolbar">
+  <input id="search" class="field" placeholder="نام پیامبر یا موضوع را جست‌وجو کن..." oninput="renderStories()">
+  <select id="category" class="field" onchange="renderStories()"><option value="all">همهٔ دسته‌ها</option><option value="پیامبر">پیامبران</option><option value="اولوالعزم">پیامبران اولوالعزم</option><option value="آموزه">آموزه‌های اخلاقی</option></select>
+  <select id="sort" class="field" onchange="renderStories()"><option value="default">ترتیب پیشنهادی</option><option value="az">نام: الف تا ی</option></select>
+ </div>
+ <div id="storyGrid" class="grid"></div>
+</section>
+<section class="section" id="detailSection">
+ <div class="detail panel" id="detail">
+  <div class="section-head"><div><div class="eyebrow">متن داستان</div><h2 id="detailTitle"></h2></div><button class="close" onclick="closeDetail()">بستن ×</button></div>
+  <div class="detail-tools"><button class="btn small" id="favBtn" onclick="toggleCurrentFavorite()">☆ افزودن به علاقه‌مندی</button><button class="btn small" onclick="speakStory()">▶ خواندن صوتی</button><button class="btn small" onclick="stopSpeak()">■ توقف صدا</button><button class="btn small" onclick="shareStory()">اشتراک‌گذاری</button><button class="btn small" onclick="printStory()">چاپ</button></div>
+  <div class="detail-text" id="detailText"></div>
+  <div class="panel" style="margin-top:18px"><b>درس‌های این داستان</b><p id="detailLessons" class="muted"></p></div>
+  <h3>یادداشت شخصی</h3><textarea id="storyNote" class="field" rows="3" placeholder="نکته‌ای که از این داستان یاد گرفتی..."></textarea><button class="btn small primary" onclick="saveNote()">ذخیرهٔ یادداشت</button>
+ </div>
+</section>
+<section class="section" id="quiz">
+ <div class="section-head"><div><h2>آزمون دانستنی‌ها</h2><p>به سؤال‌ها پاسخ بده و امتیاز جمع کن.</p></div><span class="tag">هر پاسخ درست: 10 امتیاز</span></div>
+ <div class="panel"><div class="muted" id="quizCounter">برای شروع آماده‌ای؟</div><div class="quiz-q" id="quizQuestion">آزمون کوتاه اطلاعات دینی</div><div id="quizAnswers"></div><div class="actions"><button class="btn primary" id="nextQuiz" onclick="nextQuestion()">شروع آزمون</button><span class="muted" id="quizFeedback"></span></div></div>
+</section>
+<section class="section" id="timeline">
+ <div class="section-head"><div><h2>خط زمانی پیامبران</h2><p>نمایی ساده و آموزشی از ترتیب برخی پیامبران در روایت‌های دینی؛ تاریخ دقیق همهٔ دوره‌ها مشخص نیست.</p></div></div>
+ <div class="panel"><div class="timeline" id="timelineList"></div></div>
+</section>
+<section class="section" id="saved">
+ <div class="section-head"><div><h2>یادداشت‌ها و علاقه‌مندی‌ها</h2><p>موارد ذخیره‌شده روی همین دستگاه نگهداری می‌شوند.</p></div></div>
+ <div class="two-col"><div class="panel"><h3>علاقه‌مندی‌ها</h3><div id="favoriteList" class="muted">هنوز داستانی ذخیره نشده است.</div></div><div class="panel"><h3>یادداشت‌های من</h3><div id="notesList" class="muted">یادداشتی ثبت نشده است.</div></div></div>
+</section>
+<section class="section" id="about">
+ <div class="section-head"><div><h2>دربارهٔ داستان پیامبران</h2><p>یک تجربهٔ آموزشی فارسی و مناسب مطالعهٔ خانوادگی</p></div></div>
+ <div class="panel"><p>این وب‌سایت برای آشنایی مقدماتی با روایت‌های قرآنی و آموزه‌های اخلاقی طراحی شده است. متن‌ها خلاصه و آموزشی هستند و جایگزین مطالعهٔ منابع معتبر دینی و تاریخی نیستند.</p><p class="muted">سازنده / ناشر: فروژی</p><div class="actions"><button class="btn" onclick="exportData()">پشتیبان‌گیری از اطلاعات</button><button class="btn" onclick="document.getElementById('importFile').click()">بازیابی اطلاعات</button><input id="importFile" type="file" accept="application/json" class="hidden" onchange="importData(event)"><button class="btn outline" onclick="openBazaar()">باز کردن و دانلود در بازار</button></div><p class="muted" style="font-size:12px">اطلاعات مطالعه، امتیازها و یادداشت‌ها در حافظهٔ مرورگر ذخیره می‌شوند.</p></div>
+</section>
+</main>
+<footer><div class="wrap">داستان پیامبران · نسخهٔ آموزشی وب · طراحی‌شده برای فروژی</div></footer>
+<div class="modal" id="settingsModal"><div class="modal-box"><div class="modal-head"><h2>تنظیمات</h2><button class="close" onclick="closeSettings()">×</button></div>
+ <label>اندازهٔ نوشته‌ها</label><select id="fontSize" class="field" onchange="changeFont()"><option value="14">کوچک</option><option value="15" selected>معمولی</option><option value="17">بزرگ</option><option value="19">خیلی بزرگ</option></select>
+ <p><label><input type="checkbox" id="soundToggle" checked> فعال بودن بازخورد صوتی مرورگر</label></p>
+ <p><label><input type="checkbox" id="autoSave" checked> ذخیرهٔ خودکار یادداشت‌ها</label></p>
+ <div class="actions"><button class="btn" onclick="toggleTheme()">تغییر حالت شب / روز</button><button class="btn" onclick="resetProgress()">پاک‌کردن پیشرفت</button></div>
+ </div></div>
+<div class="modal" id="dailyModal"><div class="modal-box"><div class="modal-head"><h2>سؤال روز</h2><button class="close" onclick="closeDaily()">×</button></div><p id="dailyQuestion"></p><div id="dailyAnswers"></div><p id="dailyResult" class="muted"></p></div></div>
+<div class="toast" id="toast"></div>
+<script>
+const stories = [
+{id:1,name:"حضرت آدم (ع)",symbol:"🌱",category:"پیامبر",tags:"آفرینش آغاز انسان",summary:"آغاز زندگی انسان و آموختن توبه و بازگشت به خدا.",text:"در روایت‌های دینی، حضرت آدم (ع) نخستین انسان و نخستین پیامبر معرفی شده است. خداوند به او دانش آموخت و فرشتگان را به بزرگداشت مقام انسان فرمان داد. آدم و همسرش در بهشت جای داشتند و پس از یک آزمون، به زمین آمدند تا زندگی انسانی را آغاز کنند. او از پروردگار آمرزش خواست و راه توبه و بازگشت را آموخت. داستان آدم یادآور ارزش دانش، مسئولیت‌پذیری و امید به بخشایش خداوند است.",lessons:"دانش‌آموزی، پذیرفتن مسئولیت اشتباه، توبه و امید."},
+{id:2,name:"حضرت ادریس (ع)",symbol:"📚",category:"پیامبر",tags:"دانش صبر",summary:"پیامبری که در قرآن با راستگویی و مقام بلند یاد شده است.",text:"حضرت ادریس (ع) در قرآن پیامبری راستگو و دارای مقام بلند معرفی شده است. در روایت‌های اسلامی، او به دانش، عبادت و آموزش مردم شناخته می‌شود. داستان زندگی او در منابع مختلف با جزئیات متفاوتی نقل شده و همهٔ آن جزئیات قطعیت تاریخی یکسانی ندارند. یاد او فرصتی برای توجه به ارزش آگاهی، درستکاری و تلاش پیوسته است.",lessons:"راستگویی، یادگیری و پشتکار."},
+{id:3,name:"حضرت نوح (ع)",symbol:"🚢",category:"اولوالعزم",tags:"کشتی طوفان صبر",summary:"سال‌ها دعوت به یکتاپرستی و ساخت کشتی به فرمان خدا.",text:"حضرت نوح (ع) مردم را به پرستش خدای یگانه و دوری از ستم دعوت می‌کرد. بسیاری از مردم دعوت او را نپذیرفتند، اما او با شکیبایی به راه خود ادامه داد. به فرمان خدا کشتی بزرگی ساخته شد و در زمان طوفان، مؤمنان و جفت‌هایی از جانوران در آن جای گرفتند. داستان نوح در قرآن نمونه‌ای از پایداری در راه حق و اهمیت امید است.",lessons:"صبر، پایداری، اعتماد به خدا و مهربانی با آفریدگان."},
+{id:4,name:"حضرت هود (ع)",symbol:"🌬️",category:"پیامبر",tags:"قوم عاد غرور",summary:"دعوت قوم عاد به فروتنی و پرهیز از غرور.",text:"حضرت هود (ع) برای هدایت قوم عاد فرستاده شد. قوم عاد از توانایی و امکانات خود مغرور شده بودند. هود آنان را به پرستش خدا، عدالت و فروتنی دعوت کرد و از سرانجام ستم و تکبر هشدار داد. در روایت قرآنی، گروهی از مردم نپذیرفتند و سرانجام با عذابی الهی روبه‌رو شدند. این داستان بر ناپایداری قدرت همراه با غرور تأکید می‌کند.",lessons:"فروتنی، عدالت و استفادهٔ درست از نعمت‌ها."},
+{id:5,name:"حضرت صالح (ع)",symbol:"🐪",category:"پیامبر",tags:"قوم ثمود ناقه",summary:"دعوت قوم ثمود و ماجرای نشانهٔ الهی.",text:"حضرت صالح (ع) قوم ثمود را به یکتاپرستی و درستکاری دعوت کرد. آنان نشانه‌ای روشن خواستند و در روایت قرآن، ناقه به عنوان نشانه‌ای الهی مطرح شد. به مردم سفارش شد به آن آسیب نرسانند و حق آن را رعایت کنند؛ اما گروهی سرپیچی کردند. داستان صالح دربارهٔ احترام به نشانه‌ها، رعایت حق دیگران و پرهیز از سرکشی است.",lessons:"رعایت حق، مسئولیت‌پذیری و پرهیز از لجاجت."},
+{id:6,name:"حضرت ابراهیم (ع)",symbol:"🔥",category:"اولوالعزم",tags:"بت شکنی آتش کعبه",summary:"جست‌وجوی حقیقت، ایستادگی و بنای کعبه.",text:"حضرت ابراهیم (ع) از کودکی دربارهٔ پرستش بت‌ها و باورهای نادرست قوم خود اندیشید. او مردم را به پرستش خدای یگانه فراخواند و با شجاعت در برابر بت‌پرستی ایستاد. در روایت قرآن، آتش برای او سرد و ایمن شد. ابراهیم همراه فرزندش اسماعیل در ساختن پایه‌های کعبه مشارکت کرد. زندگی او نمونه‌ای از ایمان، تفکر و مهمان‌نوازی است.",lessons:"اندیشیدن، شجاعت اخلاقی، توکل و مهمان‌نوازی."},
+{id:7,name:"حضرت لوط (ع)",symbol:"🏘️",category:"پیامبر",tags:"قوم لوط اخلاق",summary:"دعوت مردم به پاکی، عدالت و دوری از فساد.",text:"حضرت لوط (ع) مردم را به پاکدامنی، رعایت حقوق دیگران و دوری از رفتارهای نادرست دعوت می‌کرد. او در برابر بی‌عدالتی و فساد ایستاد و از مردم خواست راه درست را انتخاب کنند. داستان او در قرآن با تأکید بر مسئولیت اخلاقی جامعه و پیامدهای ستم آمده است.",lessons:"پاکی، احترام به دیگران و مقابله با بی‌عدالتی."},
+{id:8,name:"حضرت اسماعیل (ع)",symbol:"🌙",category:"پیامبر",tags:"وفاداری کعبه",summary:"نمونه‌ای از وفاداری و همکاری در بنای کعبه.",text:"حضرت اسماعیل (ع) فرزند حضرت ابراهیم (ع) بود. در قرآن از او به عنوان پیامبری درست‌وعده و شکیبا یاد شده است. او همراه پدرش در بنای کعبه همکاری کرد. ماجرای آزمون بزرگ ابراهیم و اسماعیل نیز در منابع دینی نشانه‌ای از تسلیم در برابر فرمان خدا و مهربانی او دانسته می‌شود.",lessons:"وفای به عهد، همکاری با خانواده و شکیبایی."},
+{id:9,name:"حضرت اسحاق (ع)",symbol:"✨",category:"پیامبر",tags:"ابراهیم بشارت",summary:"فرزند حضرت ابراهیم و از پیامبران بنی‌اسرائیل.",text:"حضرت اسحاق (ع) فرزند حضرت ابراهیم (ع) و از پیامبران الهی بود. در قرآن، ولادت او به خانوادهٔ ابراهیم بشارت داده شده است. نسل او در روایت‌های دینی با پیامبران بزرگی پیوند دارد. داستان کوتاه اسحاق یادآور امید، نعمت خانواده و ادامهٔ راه هدایت است.",lessons:"امید، شکرگزاری و ادامه دادن راه نیکی."},
+{id:10,name:"حضرت یعقوب (ع)",symbol:"🕊️",category:"پیامبر",tags:"یوسف خانواده صبر",summary:"پدری شکیبا که امید خود را از دست نداد.",text:"حضرت یعقوب (ع) پدر حضرت یوسف (ع) بود. هنگامی که یوسف از او دور شد، یعقوب سال‌ها اندوهگین بود، اما امید خود را به رحمت خدا از دست نداد. او فرزندانش را به جست‌وجوی امید و ناامید نشدن سفارش کرد. در پایان، خانواده دوباره به هم رسیدند. این داستان جایگاه صبر و امید را نشان می‌دهد.",lessons:"امیدواری، صبر و مهربانی با خانواده."},
+{id:11,name:"حضرت یوسف (ع)",symbol:"🌾",category:"پیامبر",tags:"خواب زندان مصر بخشش",summary:"داستان صبر، پاکدامنی، دانایی و بخشش.",text:"حضرت یوسف (ع) در کودکی خوابی دید که از آینده‌ای ویژه خبر می‌داد. برادرانش از روی حسادت او را از خانواده دور کردند. یوسف پس از دشواری‌های فراوان به مصر رسید و مدتی زندانی شد؛ اما پاکدامنی و درستکاری خود را حفظ کرد. او با دانایی خواب پادشاه را تعبیر کرد و به جایگاهی مهم رسید. هنگامی که برادرانش نزد او آمدند، آنان را بخشید. داستان یوسف در قرآن نمونه‌ای از صبر، پاکدامنی، تدبیر و گذشت است.",lessons:"صبر در سختی، پاکدامنی، دانایی، بخشش و امید."},
+{id:12,name:"حضرت ایوب (ع)",symbol:"🌿",category:"پیامبر",tags:"صبر شکیبایی",summary:"نماد شکیبایی و سپاسگزاری در روزهای دشوار.",text:"حضرت ایوب (ع) در روایت قرآنی با آزمون‌های دشوار روبه‌رو شد. او با دعا و امید به خداوند پناه برد و از رحمت او ناامید نشد. خداوند نیز سختی او را برطرف کرد. داستان ایوب در فرهنگ دینی نماد صبر و پایداری است؛ صبری که همراه با تلاش و امید معنا پیدا می‌کند.",lessons:"شکیبایی، دعا، امید و سپاسگزاری."},
+{id:13,name:"حضرت شعیب (ع)",symbol:"⚖️",category:"پیامبر",tags:"مدین عدالت ترازو",summary:"دعوت به درستکاری در معامله و رعایت حق مردم.",text:"حضرت شعیب (ع) مردم مدین را به پرستش خدا و رعایت عدالت دعوت کرد. او به آنان سفارش می‌کرد در خریدوفروش کم‌فروشی نکنند و حق مردم را کامل بدهند. داستان شعیب نشان می‌دهد ایمان فقط در گفتار نیست و باید در رفتار روزمره، کسب‌وکار و رعایت حقوق دیگران دیده شود.",lessons:"امانت‌داری، انصاف، درستکاری و رعایت حقوق مردم."},
+{id:14,name:"حضرت موسی (ع)",symbol:"🌊",category:"اولوالعزم",tags:"فرعون دریا تورات",summary:"ایستادگی در برابر فرعون و رهایی بنی‌اسرائیل.",text:"حضرت موسی (ع) در زمان فرعون به دنیا آمد. به خواست خدا از خطر نجات یافت و در کاخ فرعون پرورش پیدا کرد. او بعدها به پیامبری برگزیده شد و مأمور شد فرعون را به عدالت و پرستش خدا دعوت کند. موسی با یاری خدا بنی‌اسرائیل را از ستم فرعون رهایی بخشید. داستان او در قرآن بر شجاعت، آزادی‌خواهی و یاری خداوند تأکید دارد.",lessons:"شجاعت، عدالت‌خواهی، مسئولیت و یاری ستمدیدگان."},
+{id:15,name:"حضرت هارون (ع)",symbol:"🤝",category:"پیامبر",tags:"موسی همراهی",summary:"برادر و همراه حضرت موسی در دعوت مردم.",text:"حضرت هارون (ع) برادر حضرت موسی (ع) و پیامبر الهی بود. موسی از خدا خواست هارون را یاور و همراه او قرار دهد تا در رساندن پیام الهی کمکش کند. هارون در هدایت بنی‌اسرائیل نقش داشت. داستان او ارزش همکاری، همراهی و کمک به انجام کار درست را یادآوری می‌کند.",lessons:"همکاری، مهربانی و یاری رساندن در کارهای نیک."},
+{id:16,name:"حضرت ذوالکفل (ع)",symbol:"📜",category:"پیامبر",tags:"صبر وفای عهد",summary:"در قرآن در شمار بندگان شکیبا و نیکوکار آمده است.",text:"نام حضرت ذوالکفل (ع) در قرآن در کنار پیامبران و بندگان شکیبا یاد شده است. دربارهٔ جزئیات زندگی و زمان او گزارش‌های گوناگونی وجود دارد و نمی‌توان همهٔ آن‌ها را قطعی دانست. آنچه در یادکرد قرآنی برجسته است، صبر و نیکوکاری است.",lessons:"پایبندی به مسئولیت، صبر و نیکوکاری."},
+{id:17,name:"حضرت داوود (ع)",symbol:"🎵",category:"پیامبر",tags:"زبور عدالت",summary:"پیامبری که به حکمت و داوری عادلانه شناخته می‌شود.",text:"حضرت داوود (ع) پیامبر و فرمانروایی بود که در قرآن از نعمت حکمت و کتاب زبور برخوردار شد. او به عدالت در داوری سفارش شده بود و باید میان مردم با انصاف رفتار می‌کرد. داستان داوود نشان می‌دهد قدرت و مسئولیت باید همراه با عدالت و فروتنی باشد.",lessons:"عدالت، حکمت، فروتنی و مسئولیت‌پذیری."},
+{id:18,name:"حضرت سلیمان (ع)",symbol:"🦜",category:"پیامبر",tags:"مورچه هدهد حکمت",summary:"فرمانروایی دانا که نعمت‌های خدا را سپاس می‌گفت.",text:"حضرت سلیمان (ع) پیامبری بود که در قرآن از دانش و فرمانروایی ویژه برخوردار بود. داستان گفت‌وگوی او با مورچه و ماجرای هدهد از بخش‌های شناخته‌شدهٔ روایت زندگی اوست. سلیمان با دیدن نعمت‌ها آن‌ها را از خدا می‌دانست و سپاسگزاری می‌کرد. داستان او بر دانش، عدالت و شکرگزاری تأکید دارد.",lessons:"شکرگزاری، توجه به آفریدگان، عدالت و فروتنی."},
+{id:19,name:"حضرت الیاس (ع)",symbol:"⛰️",category:"پیامبر",tags:"دعوت یکتاپرستی",summary:"دعوت مردم به پرستش خدای یگانه.",text:"حضرت الیاس (ع) در قرآن از پیامبران نیکوکار معرفی شده است. او مردم را از پرستش بت‌ها بازمی‌داشت و به عبادت خدای یگانه دعوت می‌کرد. یاد او نمونه‌ای از ایستادگی در راه دعوت به نیکی و حقیقت است.",lessons:"پایبندی به حقیقت و دعوت مهربانانه به نیکی."},
+{id:20,name:"حضرت الیسع (ع)",symbol:"🌄",category:"پیامبر",tags:"نیکی هدایت",summary:"پیامبری که در قرآن از نیکان شمرده شده است.",text:"حضرت الیسع (ع) در قرآن در شمار پیامبران و نیکان آمده است. دربارهٔ جزئیات زندگی او اطلاعات قطعی و یکسانی در همهٔ منابع وجود ندارد. یادکرد قرآنی او ما را به ارزش هدایت، نیکوکاری و پیروی از راه پیامبران توجه می‌دهد.",lessons:"نیکوکاری، ایمان و خدمت به مردم."},
+{id:21,name:"حضرت یونس (ع)",symbol:"🐋",category:"پیامبر",tags:"ماهی دعا بازگشت",summary:"دعایی از دل تاریکی و بازگشت به سوی خدا.",text:"حضرت یونس (ع) برای هدایت مردم فرستاده شد. او مدتی از میان قوم خود رفت و در ماجرایی شگفت‌انگیز در دل دریا و شکم ماهی قرار گرفت. یونس به دعا و یاد خدا پرداخت و خداوند او را نجات داد. سپس مردم قومش ایمان آوردند. داستان او بر بازگشت، دعا و امید تأکید می‌کند.",lessons:"دعا، پذیرش مسئولیت، بازگشت و ناامید نشدن."},
+{id:22,name:"حضرت زکریا (ع)",symbol:"🌸",category:"پیامبر",tags:"دعا یحیی",summary:"پیامبری که با امید از خداوند فرزند خواست.",text:"حضرت زکریا (ع) پیامبری نیکوکار بود. او با وجود سالخوردگی، با امید و فروتنی از خداوند فرزندی شایسته درخواست کرد. خداوند دعای او را پذیرفت و حضرت یحیی (ع) به او بشارت داده شد. داستان زکریا یادآور ارزش دعا و امید در هر شرایطی است.",lessons:"امید، دعا، فروتنی و اعتماد به خدا."},
+{id:23,name:"حضرت یحیی (ع)",symbol:"🕯️",category:"پیامبر",tags:"زکریا پاکی",summary:"پیامبری جوان که به پاکی و پرهیزکاری شناخته می‌شود.",text:"حضرت یحیی (ع) فرزند حضرت زکریا (ع) بود. در قرآن از او با ویژگی‌هایی مانند پاکی، مهربانی و نیکوکاری یاد شده است. او از کودکی اهل حکمت و بندگی خدا بود و مردم را به راه درست دعوت می‌کرد.",lessons:"پاکی، مهربانی، خردمندی و احترام به پدر و مادر."},
+{id:24,name:"حضرت عیسی (ع)",symbol:"🕊️",category:"اولوالعزم",tags:"مریم انجیل معجزه",summary:"پیامبری بزرگ که با اذن خدا معجزات داشت.",text:"حضرت عیسی (ع) فرزند حضرت مریم (س) است و در قرآن پیامبری بزرگ معرفی شده است. تولد او نشانه‌ای از قدرت خداوند دانسته می‌شود. عیسی مردم را به پرستش خدا، مهربانی و پاکی دعوت می‌کرد. در قرآن آمده است که او به اذن خدا بیماران را شفا می‌داد و معجزات دیگری داشت. مسلمانان برای حضرت عیسی و مادرش احترام ویژه‌ای قائل‌اند.",lessons:"مهربانی، پاکی، فروتنی و یکتاپرستی."},
+{id:25,name:"حضرت محمد (ص)",symbol:"☼",category:"اولوالعزم",tags:"قرآن رحمت اخلاق",summary:"آخرین پیامبر و آورندهٔ پیام قرآن و رحمت.",text:"حضرت محمد (ص) در شهر مکه به دنیا آمد و در بزرگسالی به پیامبری برگزیده شد. او مردم را به یکتاپرستی، عدالت، مهربانی و دوری از ستم دعوت کرد. قرآن بر او نازل شد و پیام اسلام را به مردم رساند. پیامبر اسلام در رفتار خود به راستگویی، امانت‌داری، گذشت و خوش‌رفتاری شناخته می‌شد. مسلمانان او را خاتم پیامبران می‌دانند.",lessons:"راستگویی، امانت‌داری، مهربانی، عدالت و گذشت."}
+];
+const quizData=[
+{q:"کدام پیامبر به ساخت کشتی به فرمان خدا شناخته می‌شود؟",a:["حضرت نوح (ع)","حضرت داوود (ع)","حضرت یونس (ع)"],c:0},
+{q:"داستان کدام پیامبر با خواب و تعبیر خواب پیوند دارد؟",a:["حضرت هود (ع)","حضرت یوسف (ع)","حضرت صالح (ع)"],c:1},
+{q:"کدام پیامبر با فرعون روبه‌رو شد؟",a:["حضرت موسی (ع)","حضرت ادریس (ع)","حضرت ایوب (ع)"],c:0},
+{q:"کدام پیامبر در قرآن با ماجرای ماهی یاد شده است؟",a:["حضرت اسماعیل (ع)","حضرت یونس (ع)","حضرت هارون (ع)"],c:1},
+{q:"کدام پیامبر همراه فرزندش در ساخت کعبه همکاری کرد؟",a:["حضرت ابراهیم (ع)","حضرت سلیمان (ع)","حضرت زکریا (ع)"],c:0},
+{q:"آخرین پیامبر در باور اسلامی چه کسی است؟",a:["حضرت عیسی (ع)","حضرت موسی (ع)","حضرت محمد (ص)"],c:2},
+{q:"کدام پیامبر به عدالت در معامله و کم‌فروشی نکردن سفارش می‌کرد؟",a:["حضرت شعیب (ع)","حضرت لوط (ع)","حضرت الیاس (ع)"],c:0}
+];
+const timelineIds=[1,3,6,8,10,11,14,17,18,21,22,23,24,25];
+const KEY="dastanPayambaran_v2";
+let state={favorites:[],read:[],notes:{},points:0,theme:"dark",font:15,quizDone:[],dailyDone:""};
+let currentStory=null,quizIndex=0,quizStarted=false,quizAnswered=false,showFavOnly=false;
+function loadState(){try{const x=JSON.parse(localStorage.getItem(KEY)||"{}");state={...state,...x}}catch(e){}document.body.classList.toggle("light",state.theme==="light");document.documentElement.style.setProperty("--base-font",state.font+"px");}
+function saveState(){try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}updateStats();}
+function toast(t){const el=document.getElementById("toast");el.textContent=t;el.classList.add("show");setTimeout(()=>el.classList.remove("show"),2300)}
+function updateStats(){document.getElementById("statStories").textContent=stories.length;document.getElementById("statFav").textContent=state.favorites.length;document.getElementById("statPoints").textContent=state.points;document.getElementById("readCount").textContent=state.read.length;document.getElementById("readProgress").style.width=(state.read.length/stories.length*100)+"%";renderSaved();}
+function renderStories(){const q=document.getElementById("search").value.trim().toLowerCase(),cat=document.getElementById("category").value,sort=document.getElementById("sort").value;let list=stories.filter(s=>(!showFavOnly||state.favorites.includes(s.id))&&(cat==="all"||s.category===cat|| (cat==="آموزه"&&s.lessons))&&[s.name,s.summary,s.tags,s.text].join(" ").toLowerCase().includes(q));if(sort==="az")list.sort((a,b)=>a.name.localeCompare(b.name,"fa"));const grid=document.getElementById("storyGrid");grid.innerHTML="";if(!list.length){grid.innerHTML='<div class="empty">موردی پیدا نشد. عبارت دیگری جست‌وجو کن.</div>';return}list.forEach(s=>{const el=document.createElement("article");el.className="story-card";el.innerHTML=`<div class="card-top"><div class="avatar">${s.symbol}</div><span class="tag">${s.category}</span></div><h3>${s.name}</h3><p>${s.summary}</p><div class="card-actions"><button class="btn small primary" onclick="openStory(${s.id})">خواندن داستان</button><button class="btn small" onclick="quickFavorite(${s.id})">${state.favorites.includes(s.id)?"★":"☆"}</button></div>`;grid.appendChild(el)});}
+function openStory(id){const s=stories.find(x=>x.id===id);if(!s)return;currentStory=s;state.read=[...new Set([...state.read,id])];document.getElementById("detailTitle").textContent=s.name;document.getElementById("detailText").textContent=s.text;document.getElementById("detailLessons").textContent=s.lessons;document.getElementById("storyNote").value=state.notes[id]||"";updateFavButton();document.getElementById("detail").classList.add("show");saveState();document.getElementById("detailSection").scrollIntoView({behavior:"smooth"});}
+function closeDetail(){document.getElementById("detail").classList.remove("show");stopSpeak()}
+function updateFavButton(){if(!currentStory)return;const yes=state.favorites.includes(currentStory.id);document.getElementById("favBtn").textContent=yes?"★ حذف از علاقه‌مندی":"☆ افزودن به علاقه‌مندی"}
+function toggleCurrentFavorite(){if(!currentStory)return;quickFavorite(currentStory.id);updateFavButton()}
+function quickFavorite(id){state.favorites=state.favorites.includes(id)?state.favorites.filter(x=>x!==id):[...state.favorites,id];saveState();renderStories();updateFavButton();toast(state.favorites.includes(id)?"به علاقه‌مندی‌ها اضافه شد":"از علاقه‌مندی‌ها حذف شد")}
+function showFavorites(){showFavOnly=!showFavOnly;document.getElementById("stories").scrollIntoView({behavior:"smooth"});toast(showFavOnly?"فقط علاقه‌مندی‌ها نمایش داده می‌شوند":"همهٔ داستان‌ها نمایش داده می‌شوند");renderStories()}
+function saveNote(){if(!currentStory)return;state.notes[currentStory.id]=document.getElementById("storyNote").value;saveState();toast("یادداشت ذخیره شد")}
+function renderSaved(){const fav=document.getElementById("favoriteList"),notes=document.getElementById("notesList");if(!fav||!notes)return;fav.innerHTML=state.favorites.length?state.favorites.map(id=>{let s=stories.find(x=>x.id===id);return s?`<p><button class="btn small" onclick="openStory(${id})">${s.name}</button></p>`:""}).join(""):"هنوز داستانی ذخیره نشده است.";const ns=Object.entries(state.notes).filter(([k,v])=>v.trim());notes.innerHTML=ns.length?ns.map(([id,v])=>`<p><b>${stories.find(s=>s.id==id)?.name||"داستان"}:</b><br>${escapeHTML(v)}</p>`).join(""):"یادداشتی ثبت نشده است."}
+function escapeHTML(s){return s.replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function speakStory(){if(!currentStory)return;if(!("speechSynthesis"in window)){toast("خواندن صوتی در این مرورگر پشتیبانی نمی‌شود");return}stopSpeak();const u=new SpeechSynthesisUtterance(currentStory.name+". "+currentStory.text);u.lang="fa-IR";u.rate=.9;speechSynthesis.speak(u)}
+function stopSpeak(){if("speechSynthesis"in window)speechSynthesis.cancel()}
+async function shareStory(){if(!currentStory)return;const text=currentStory.name+"\n"+currentStory.text;if(navigator.share){try{await navigator.share({title:currentStory.name,text})}catch(e){}}else{try{await navigator.clipboard.writeText(text);toast("متن داستان کپی شد")}catch(e){toast("اشتراک‌گذاری در این مرورگر در دسترس نیست")}}}
+function printStory(){if(!currentStory)return;const w=window.open("","_blank");if(!w){toast("اجازهٔ بازشدن پنجره را بده");return}w.document.write(`<html lang="fa" dir="rtl"><meta charset="UTF-8"><title>${currentStory.name}</title><body style="font-family:Tahoma;line-height:2;padding:30px"><h2>${currentStory.name}</h2><p>${currentStory.text}</p><h3>درس‌های داستان</h3><p>${currentStory.lessons}</p></body></html>`);w.document.close();w.print()}
+function go(id){const el=document.getElementById(id);if(el)el.scrollIntoView({behavior:"smooth"});}
+function toggleTheme(){state.theme=state.theme==="light"?"dark":"light";document.body.classList.toggle("light",state.theme==="light");saveState()}
+function openSettings(){document.getElementById("fontSize").value=state.font;document.getElementById("settingsModal").classList.add("open")}
+function closeSettings(){document.getElementById("settingsModal").classList.remove("open")}
+function changeFont(){state.font=Number(document.getElementById("fontSize").value);document.body.style.fontSize=state.font+"px";saveState()}
+function resetProgress(){if(!confirm("همهٔ امتیازها، علاقه‌مندی‌ها، یادداشت‌ها و پیشرفت پاک شود؟"))return;state={favorites:[],read:[],notes:{},points:0,theme:state.theme,font:state.font,quizDone:[],dailyDone:""};saveState();renderStories();toast("پیشرفت پاک شد");closeSettings()}
+function nextQuestion(){if(!quizStarted){quizStarted=true;quizIndex=0;quizAnswered=false;showQuestion();return}if(!quizAnswered){toast("اول یک گزینه انتخاب کن");return}quizIndex++;if(quizIndex>=quizData.length){document.getElementById("quizQuestion").textContent="آزمون تمام شد!";document.getElementById("quizAnswers").innerHTML="";document.getElementById("quizCounter").textContent="آفرین! امتیاز فعلی: "+state.points;document.getElementById("nextQuiz").textContent="شروع دوباره";quizStarted=false;return}quizAnswered=false;showQuestion()}
+function showQuestion(){const q=quizData[quizIndex];document.getElementById("quizCounter").textContent=`سؤال ${quizIndex+1} از ${quizData.length}`;document.getElementById("quizQuestion").textContent=q.q;document.getElementById("quizFeedback").textContent="";document.getElementById("nextQuiz").textContent="سؤال بعدی";document.getElementById("quizAnswers").innerHTML=q.a.map((a,i)=>`<button class="answer" onclick="answerQuestion(${i})">${a}</button>`).join("")}
+function answerQuestion(i){if(quizAnswered)return;quizAnswered=true;const q=quizData[quizIndex],buttons=[...document.querySelectorAll("#quizAnswers .answer")];buttons[q.c].classList.add("correct");if(i===q.c){state.points+=10;document.getElementById("quizFeedback").textContent="پاسخ درست! ۱۰ امتیاز گرفتی.";toast("۱۰ امتیاز اضافه شد")}else{buttons[i].classList.add("wrong");document.getElementById("quizFeedback").textContent="این گزینه درست نبود. پاسخ صحیح مشخص شده است."}buttons.forEach(b=>b.disabled=true);saveState()}
+function dailyOpen(){const q=quizData[new Date().getDate()%quizData.length];document.getElementById("dailyQuestion").textContent=q.q;document.getElementById("dailyResult").textContent="";document.getElementById("dailyAnswers").innerHTML=q.a.map((a,i)=>`<button class="answer" onclick="dailyAnswer(${i},${q.c})">${a}</button>`).join("");document.getElementById("dailyModal").classList.add("open")}
+function dailyAnswer(i,c){if(state.dailyDone===new Date().toDateString()){toast("سؤال امروز را قبلاً پاسخ داده‌ای");return}if(i===c){state.points+=10;state.dailyDone=new Date().toDateString();document.getElementById("dailyResult").textContent="آفرین! پاسخ درست بود و ۱۰ امتیاز گرفتی."}else{document.getElementById("dailyResult").textContent="پاسخ درست این بار گزینهٔ دیگری بود. فردا دوباره تلاش کن."}saveState();document.querySelectorAll("#dailyAnswers button").forEach(b=>b.disabled=true)}
+function closeDaily(){document.getElementById("dailyModal").classList.remove("open")}
+function openDailyStory(){openStory(11)}
+function renderTimeline(){const el=document.getElementById("timelineList");el.innerHTML=timelineIds.map(id=>{const s=stories.find(x=>x.id===id);return `<div class="timeitem"><b>${s.name}</b><div class="muted">${s.summary}</div><button class="btn small" onclick="openStory(${id})">مشاهدهٔ داستان</button></div>`}).join("")}
+function exportData(){const blob=new Blob([JSON.stringify(state,null,2)],{type:"application/json"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="dastan-payambaran-backup.json";a.click();URL.revokeObjectURL(a.href);toast("فایل پشتیبان آماده شد")}
+function importData(e){const file=e.target.files[0];if(!file)return;const reader=new FileReader();reader.onload=()=>{try{const data=JSON.parse(reader.result);state={...state,...data};saveState();loadState();renderStories();toast("اطلاعات بازیابی شد")}catch(err){toast("فایل پشتیبان معتبر نیست")}};reader.readAsText(file);e.target.value=""}
+function openBazaar(){const packageId="";if(packageId.trim()){window.open("https://cafebazaar.ir/app/"+encodeURIComponent(packageId.trim()),"_blank")}else{window.open("https://cafebazaar.ir/","_blank");toast("پس از انتشار، شناسهٔ بسته را در کد جایگزین کن تا لینک مستقیم برنامه فعال شود.")}}
+function init(){loadState();document.body.style.fontSize=state.font+"px";renderStories();renderTimeline();updateStats();document.getElementById("dailyTitle").textContent="داستان حضرت یوسف (ع)";document.getElementById("dailyDesc").textContent="داستان صبر، پاکدامنی، دانایی و بخشش"}
+init();
+</script>
+</body>
+   </html>
